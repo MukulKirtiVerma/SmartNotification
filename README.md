@@ -48,7 +48,7 @@ The system is built on a multi-agent architecture with four main layers:
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/mukulkirtiverma/smart-notification-system.git
+git clone [https://github.com/MukulKirtiVerma/smart-notification-system.git](https://github.com/MukulKirtiVerma/SmartNotification.git)
 cd smart-notification-system
 
 2. Set up a virtual environment:
