@@ -77,7 +77,10 @@ class EmailEngagementAgent(BaseAgent):
             }
 
             # Store the event in MongoDB
-            self.user_events_collection.insert_one(event)
+            try:
+                self.user_events_collection.insert_one(event)
+            except Exception as e:
+                print(e)
 
             logger.debug(f"Processed email engagement for user {notification.user_id}, action: {engagement.action}")
 

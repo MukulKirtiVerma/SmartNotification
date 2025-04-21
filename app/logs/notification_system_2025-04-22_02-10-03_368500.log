@@ -1,0 +1,633 @@
+2025-04-22T02:10:03.370573+0530 INFO Starting Smart Notification System
+2025-04-22T02:10:10.439813+0530 INFO Database tables initialized
+2025-04-22T02:10:10.439813+0530 INFO Agent dashboard_tracker_8abe76a7 registered as dashboard_tracker
+2025-04-22T02:10:10.439813+0530 INFO Agent dashboard_tracker_8abe76a7 (Dashboard Tracker) initialized
+2025-04-22T02:10:10.440839+0530 INFO Agent email_engagement_7adbd1e0 registered as email_engagement
+2025-04-22T02:10:10.440839+0530 INFO Agent email_engagement_7adbd1e0 (Email Engagement Tracker) initialized
+2025-04-22T02:10:10.445795+0530 INFO Agent mobile_app_events_547b8a25 registered as mobile_app_events
+2025-04-22T02:10:10.445795+0530 INFO Agent mobile_app_events_547b8a25 (Mobile App Events Tracker) initialized
+2025-04-22T02:10:10.446792+0530 INFO Agent sms_interaction_5dd0fc07 registered as sms_interaction
+2025-04-22T02:10:10.446792+0530 INFO Agent sms_interaction_5dd0fc07 (SMS Interaction Tracker) initialized
+2025-04-22T02:10:10.446792+0530 INFO Agent frequency_analysis_9bb1cb75 registered as frequency_analysis
+2025-04-22T02:10:10.447790+0530 INFO Agent frequency_analysis_9bb1cb75 (Frequency Analysis) initialized
+2025-04-22T02:10:10.447790+0530 INFO Agent type_analysis_746ec6d8 registered as type_analysis
+2025-04-22T02:10:10.447790+0530 INFO Agent type_analysis_746ec6d8 (Type Analysis) initialized
+2025-04-22T02:10:10.448788+0530 INFO Agent channel_analysis_0381c703 registered as channel_analysis
+2025-04-22T02:10:10.448788+0530 INFO Agent channel_analysis_0381c703 (Channel Analysis) initialized
+2025-04-22T02:10:10.448788+0530 INFO Agent user_profile_b0ad643a registered as user_profile
+2025-04-22T02:10:10.449784+0530 INFO Agent user_profile_b0ad643a (User Profile Service) initialized
+2025-04-22T02:10:10.449784+0530 INFO Agent recommendation_9a3eb4af registered as recommendation
+2025-04-22T02:10:10.449784+0530 INFO Agent recommendation_9a3eb4af (Recommendation System) initialized
+2025-04-22T02:10:10.449784+0530 INFO Agent ab_testing_36f0c573 registered as ab_testing
+2025-04-22T02:10:10.450782+0530 INFO Agent ab_testing_36f0c573 (A/B Testing Module) initialized
+2025-04-22T02:10:10.450782+0530 INFO Agent email_service_77887d20 registered as email_service
+2025-04-22T02:10:10.450782+0530 INFO Agent email_service_77887d20 (Email Service) initialized
+2025-04-22T02:10:10.450782+0530 INFO Agent push_notification_07548e6c registered as push_notification
+2025-04-22T02:10:10.451780+0530 INFO Agent push_notification_07548e6c (Push Notification Service) initialized
+2025-04-22T02:10:10.451780+0530 INFO Agent sms_gateway_e8142886 registered as sms_gateway
+2025-04-22T02:10:10.451780+0530 INFO Agent sms_gateway_e8142886 (SMS Gateway) initialized
+2025-04-22T02:10:10.451780+0530 INFO Agent dashboard_alert_f851a8d2 registered as dashboard_alert
+2025-04-22T02:10:10.452776+0530 INFO Agent dashboard_alert_f851a8d2 (Dashboard Alert System) initialized
+2025-04-22T02:10:10.452776+0530 INFO Starting 14 agents
+2025-04-22T02:10:10.452776+0530 INFO All agents started
+2025-04-22T02:10:10.453781+0530 INFO Smart Notification System started successfully
+2025-04-22T02:10:10.453781+0530 INFO Agent dashboard_tracker_8abe76a7 (Dashboard Tracker) starting
+2025-04-22T02:10:10.454785+0530 DEBUG DashboardTrackerAgent dashboard_tracker_8abe76a7 processing
+2025-04-22T02:10:13.911538+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:10:15.500436+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:10:17.262697+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:10:18.064580+0530 INFO Sent dashboard metrics for 0 users to analysis agents
+2025-04-22T02:10:18.850560+0530 INFO Agent email_engagement_7adbd1e0 (Email Engagement Tracker) starting
+2025-04-22T02:10:18.850560+0530 DEBUG EmailEngagementAgent email_engagement_7adbd1e0 processing
+2025-04-22T02:10:19.652531+0530 ERROR Error processing email engagement: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 2, 'event_type': 'email_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 20, 22, 12, 389000)}}
+2025-04-22T02:10:22.025844+0530 ERROR Error in agent email_engagement_7adbd1e0: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 2, 'event_type': 'email_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 20, 22, 12, 389000)}}
+2025-04-22T02:10:22.025844+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\email_engagement.py", line 34, in process
+    await self._process_recent_engagements(db)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\email_engagement.py", line 80, in _process_recent_engagements
+    self.user_events_collection.insert_one(event)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 628, in insert_one
+    self._insert_one(
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _retry_internal
+    return func(session, sock_info, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 567, in _insert_command
+    _check_write_command_response(result)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 189, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 2, 'event_type': 'email_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 20, 22, 12, 389000)}}
+
+2025-04-22T02:10:22.025844+0530 INFO Agent mobile_app_events_547b8a25 (Mobile App Events Tracker) starting
+2025-04-22T02:10:22.025844+0530 DEBUG MobileAppEventsAgent mobile_app_events_547b8a25 processing
+2025-04-22T02:10:22.781139+0530 ERROR Error processing mobile app events: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 15, 'event_type': 'push_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 19, 42, 18, 320000)}}
+2025-04-22T02:10:24.981757+0530 ERROR Error in agent mobile_app_events_547b8a25: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 15, 'event_type': 'push_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 19, 42, 18, 320000)}}
+2025-04-22T02:10:24.997439+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\mobile_app_events.py", line 34, in process
+    await self._process_recent_engagements(db)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\mobile_app_events.py", line 80, in _process_recent_engagements
+    self.user_events_collection.insert_one(event)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 628, in insert_one
+    self._insert_one(
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _retry_internal
+    return func(session, sock_info, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 567, in _insert_command
+    _check_write_command_response(result)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 189, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 15, 'event_type': 'push_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 19, 42, 18, 320000)}}
+
+2025-04-22T02:10:24.997439+0530 INFO Agent sms_interaction_5dd0fc07 (SMS Interaction Tracker) starting
+2025-04-22T02:10:24.997439+0530 DEBUG SMSInteractionAgent sms_interaction_5dd0fc07 processing
+2025-04-22T02:10:26.242089+0530 DEBUG Calculated SMS metrics for user 4: 0.0% response rate
+2025-04-22T02:10:26.806291+0530 DEBUG Calculated SMS metrics for user 9: 100.0% response rate
+2025-04-22T02:10:27.341267+0530 DEBUG Calculated SMS metrics for user 10: 20.0% response rate
+2025-04-22T02:10:27.860167+0530 DEBUG Calculated SMS metrics for user 15: 25.0% response rate
+2025-04-22T02:10:28.694365+0530 DEBUG Calculated SMS metrics for user 6: 0.0% response rate
+2025-04-22T02:10:29.228356+0530 DEBUG Calculated SMS metrics for user 12: 0.0% response rate
+2025-04-22T02:10:29.764774+0530 DEBUG Calculated SMS metrics for user 21: 0.0% response rate
+2025-04-22T02:10:30.299212+0530 DEBUG Calculated SMS metrics for user 14: 0.0% response rate
+2025-04-22T02:10:30.822780+0530 DEBUG Calculated SMS metrics for user 3: 0.0% response rate
+2025-04-22T02:10:31.354648+0530 DEBUG Calculated SMS metrics for user 17: 0.0% response rate
+2025-04-22T02:10:31.889060+0530 DEBUG Calculated SMS metrics for user 13: 0.0% response rate
+2025-04-22T02:10:32.408470+0530 DEBUG Calculated SMS metrics for user 5: 0.0% response rate
+2025-04-22T02:10:32.943083+0530 DEBUG Calculated SMS metrics for user 18: 0.0% response rate
+2025-04-22T02:10:33.478981+0530 DEBUG Calculated SMS metrics for user 2: 0.0% response rate
+2025-04-22T02:10:36.031274+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:10:37.982227+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:10:39.650341+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:10:40.455093+0530 INFO Sent SMS metrics for 100 users to analysis agents
+2025-04-22T02:10:41.242684+0530 INFO Agent frequency_analysis_9bb1cb75 (Frequency Analysis) starting
+2025-04-22T02:10:42.044607+0530 INFO Received 0 dashboard metrics from Dashboard Tracker
+2025-04-22T02:10:43.635829+0530 INFO Received 100 SMS engagement metrics from SMS Interaction Tracker
+2025-04-22T02:10:50.768901+0530 DEBUG FrequencyAnalysisAgent frequency_analysis_9bb1cb75 processing
+2025-04-22T02:10:51.378955+0530 DEBUG Updated frequency preferences for user 4: low (0.20)
+2025-04-22T02:10:51.503922+0530 DEBUG Updated frequency preferences for user 9: medium (0.57)
+2025-04-22T02:10:51.644954+0530 DEBUG Updated frequency preferences for user 10: very_low (0.15)
+2025-04-22T02:10:51.769925+0530 DEBUG Updated frequency preferences for user 15: low (0.22)
+2025-04-22T02:10:51.895713+0530 DEBUG Updated frequency preferences for user 6: medium (0.55)
+2025-04-22T02:10:52.302370+0530 DEBUG Updated frequency preferences for user 12: medium (0.42)
+2025-04-22T02:10:52.412573+0530 DEBUG Updated frequency preferences for user 21: very_low (0.00)
+2025-04-22T02:10:52.537545+0530 DEBUG Updated frequency preferences for user 14: very_low (0.11)
+2025-04-22T02:10:52.694180+0530 DEBUG Updated frequency preferences for user 3: medium (0.50)
+2025-04-22T02:10:52.819559+0530 DEBUG Updated frequency preferences for user 17: low (0.35)
+2025-04-22T02:10:52.929345+0530 DEBUG Updated frequency preferences for user 13: low (0.30)
+2025-04-22T02:10:53.054362+0530 DEBUG Updated frequency preferences for user 5: low (0.35)
+2025-04-22T02:10:53.179658+0530 DEBUG Updated frequency preferences for user 18: low (0.25)
+2025-04-22T02:10:53.305091+0530 DEBUG Updated frequency preferences for user 2: low (0.20)
+2025-04-22T02:10:53.415677+0530 DEBUG Updated frequency preferences for user 7: medium (0.49)
+2025-04-22T02:10:53.540580+0530 DEBUG Updated frequency preferences for user 19: very_high (1.00)
+2025-04-22T02:10:53.653248+0530 DEBUG Updated frequency preferences for user 20: low (0.30)
+2025-04-22T02:10:53.775822+0530 DEBUG Updated frequency preferences for user 16: very_low (0.15)
+2025-04-22T02:10:53.905815+0530 DEBUG Updated frequency preferences for user 11: very_high (1.00)
+2025-04-22T02:10:54.024605+0530 DEBUG Updated frequency preferences for user 8: high (0.72)
+2025-04-22T02:10:55.892203+0530 DEBUG Updated time preferences for user 2: peak period evening
+2025-04-22T02:10:56.023674+0530 DEBUG Updated time preferences for user 5: peak period evening
+2025-04-22T02:10:56.142643+0530 DEBUG Updated time preferences for user 6: peak period evening
+2025-04-22T02:10:56.270147+0530 DEBUG Updated time preferences for user 7: peak period evening
+2025-04-22T02:10:56.388752+0530 DEBUG Updated time preferences for user 8: peak period evening
+2025-04-22T02:10:56.506503+0530 DEBUG Updated time preferences for user 10: peak period evening
+2025-04-22T02:10:56.625193+0530 DEBUG Updated time preferences for user 13: peak period evening
+2025-04-22T02:10:56.750246+0530 DEBUG Updated time preferences for user 17: peak period evening
+2025-04-22T02:10:56.869287+0530 DEBUG Updated time preferences for user 9: peak period evening
+2025-04-22T02:10:56.987895+0530 DEBUG Updated time preferences for user 11: peak period evening
+2025-04-22T02:10:57.103804+0530 DEBUG Updated time preferences for user 12: peak period evening
+2025-04-22T02:10:57.221849+0530 DEBUG Updated time preferences for user 20: peak period evening
+2025-04-22T02:10:57.341496+0530 DEBUG Updated time preferences for user 21: peak period evening
+2025-04-22T02:10:57.462185+0530 DEBUG Updated time preferences for user 3: peak period evening
+2025-04-22T02:10:57.582847+0530 DEBUG Updated time preferences for user 4: peak period evening
+2025-04-22T02:10:57.701533+0530 DEBUG Updated time preferences for user 19: peak period evening
+2025-04-22T02:10:57.847796+0530 DEBUG Updated time preferences for user 15: peak period evening
+2025-04-22T02:10:57.967124+0530 DEBUG Updated time preferences for user 16: peak period evening
+2025-04-22T02:10:58.084810+0530 DEBUG Updated time preferences for user 18: peak period evening
+2025-04-22T02:10:58.201752+0530 DEBUG Updated time preferences for user 14: peak period evening
+2025-04-22T02:10:59.111318+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:10:59.901659+0530 INFO Sent frequency recommendations for 20 users to User Profile Service
+2025-04-22T02:11:00.688822+0530 INFO Agent type_analysis_746ec6d8 (Type Analysis) starting
+2025-04-22T02:11:01.427360+0530 INFO Received 0 dashboard section views from Dashboard Tracker
+2025-04-22T02:11:02.988271+0530 INFO Received 0 notification type metrics from SMS Interaction Tracker
+2025-04-22T02:11:03.760544+0530 DEBUG TypeAnalysisAgent type_analysis_746ec6d8 processing
+2025-04-22T02:11:03.997056+0530 DEBUG Updated content preferences for user 21: top type delivery
+2025-04-22T02:11:04.114732+0530 DEBUG Updated content preferences for user 18: top type shipment
+2025-04-22T02:11:04.241950+0530 DEBUG Updated content preferences for user 19: top type order_confirmation
+2025-04-22T02:11:04.373398+0530 DEBUG Updated content preferences for user 15: top type delivery
+2025-04-22T02:11:04.490652+0530 DEBUG Updated content preferences for user 5: top type promotion
+2025-04-22T02:11:04.608051+0530 DEBUG Updated content preferences for user 11: top type packing
+2025-04-22T02:11:04.727888+0530 DEBUG Updated content preferences for user 3: top type packing
+2025-04-22T02:11:04.847245+0530 DEBUG Updated content preferences for user 13: top type packing
+2025-04-22T02:11:04.966153+0530 DEBUG Updated content preferences for user 10: top type return
+2025-04-22T02:11:05.082454+0530 DEBUG Updated content preferences for user 17: top type promotion
+2025-04-22T02:11:05.204989+0530 DEBUG Updated content preferences for user 9: top type promotion
+2025-04-22T02:11:05.323818+0530 DEBUG Updated content preferences for user 20: top type promotion
+2025-04-22T02:11:05.438987+0530 DEBUG Updated content preferences for user 14: top type packing
+2025-04-22T02:11:05.556268+0530 DEBUG Updated content preferences for user 7: top type price_drop
+2025-04-22T02:11:05.680893+0530 DEBUG Updated content preferences for user 4: top type delivery
+2025-04-22T02:11:05.797773+0530 DEBUG Updated content preferences for user 12: top type price_drop
+2025-04-22T02:11:05.918137+0530 DEBUG Updated content preferences for user 2: top type promotion
+2025-04-22T02:11:06.035733+0530 DEBUG Updated content preferences for user 8: top type restock
+2025-04-22T02:11:06.153355+0530 DEBUG Updated content preferences for user 6: top type order_confirmation
+2025-04-22T02:11:07.070618+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:11:07.813393+0530 INFO Sent content recommendations for 20 users to User Profile Service
+2025-04-22T02:11:08.584513+0530 INFO Agent channel_analysis_0381c703 (Channel Analysis) starting
+2025-04-22T02:11:09.378157+0530 INFO Received 0 channel engagements from Dashboard Tracker
+2025-04-22T02:11:10.955625+0530 INFO Received 100 channel engagements from SMS Interaction Tracker
+2025-04-22T02:11:17.790649+0530 DEBUG ChannelAnalysisAgent channel_analysis_0381c703 processing
+2025-04-22T02:11:18.445803+0530 DEBUG Updated channel preferences for user 2: top channel email
+2025-04-22T02:11:18.566536+0530 DEBUG Updated channel preferences for user 18: top channel email
+2025-04-22T02:11:18.685538+0530 DEBUG Updated channel preferences for user 5: top channel email
+2025-04-22T02:11:18.808771+0530 DEBUG Updated channel preferences for user 13: top channel email
+2025-04-22T02:11:18.925044+0530 DEBUG Updated channel preferences for user 17: top channel email
+2025-04-22T02:11:19.043689+0530 DEBUG Updated channel preferences for user 3: top channel email
+2025-04-22T02:11:19.696537+0530 DEBUG Updated channel preferences for user 14: top channel push
+2025-04-22T02:11:19.815828+0530 DEBUG Updated channel preferences for user 21: top channel email
+2025-04-22T02:11:19.934381+0530 DEBUG Updated channel preferences for user 12: top channel email
+2025-04-22T02:11:20.058639+0530 DEBUG Updated channel preferences for user 6: top channel push
+2025-04-22T02:11:20.181830+0530 DEBUG Updated channel preferences for user 15: top channel sms
+2025-04-22T02:11:20.301138+0530 DEBUG Updated channel preferences for user 10: top channel sms
+2025-04-22T02:11:20.418851+0530 DEBUG Updated channel preferences for user 9: top channel sms
+2025-04-22T02:11:20.536179+0530 DEBUG Updated channel preferences for user 4: top channel email
+2025-04-22T02:11:20.663838+0530 DEBUG Updated channel preferences for user 8: top channel push
+2025-04-22T02:11:20.779797+0530 DEBUG Updated channel preferences for user 11: top channel email
+2025-04-22T02:11:20.897814+0530 DEBUG Updated channel preferences for user 16: top channel email
+2025-04-22T02:11:21.015952+0530 DEBUG Updated channel preferences for user 20: top channel email
+2025-04-22T02:11:21.130676+0530 DEBUG Updated channel preferences for user 19: top channel email
+2025-04-22T02:11:21.245993+0530 DEBUG Updated channel preferences for user 7: top channel email
+2025-04-22T02:11:22.120681+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:11:22.917342+0530 INFO Sent channel recommendations for 20 users to User Profile Service
+2025-04-22T02:11:23.755456+0530 INFO Agent user_profile_b0ad643a (User Profile Service) starting
+2025-04-22T02:11:24.601990+0530 INFO Received frequency recommendations for 20 users from Frequency Analysis
+2025-04-22T02:11:27.812432+0530 INFO Received content recommendations for 20 users from Type Analysis
+2025-04-22T02:11:30.629359+0530 INFO Received channel recommendations for 20 users from Channel Analysis
+2025-04-22T02:11:32.659778+0530 DEBUG UserProfileAgent user_profile_b0ad643a processing
+2025-04-22T02:11:32.785111+0530 INFO Merging updates for 20 user profiles
+2025-04-22T02:11:32.972252+0530 DEBUG Updated segments for user 2: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:11:33.034706+0530 DEBUG Updated segments for user 3: ['frequency_medium', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:11:33.093648+0530 DEBUG Updated segments for user 4: ['frequency_low', 'prefers_email', 'prefers_delivery', 'active_evening']
+2025-04-22T02:11:33.156331+0530 DEBUG Updated segments for user 5: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:11:33.219003+0530 DEBUG Updated segments for user 6: ['frequency_medium', 'prefers_push', 'prefers_order_confirmation', 'active_evening']
+2025-04-22T02:11:33.265861+0530 DEBUG Updated segments for user 7: ['frequency_medium', 'prefers_email', 'prefers_price_drop', 'active_evening']
+2025-04-22T02:11:33.328560+0530 DEBUG Updated segments for user 8: ['frequency_high', 'prefers_push', 'prefers_restock', 'active_evening']
+2025-04-22T02:11:33.391681+0530 DEBUG Updated segments for user 9: ['frequency_medium', 'prefers_sms', 'prefers_promotion', 'active_evening']
+2025-04-22T02:11:33.454400+0530 DEBUG Updated segments for user 10: ['frequency_very_low', 'prefers_sms', 'prefers_return', 'active_evening']
+2025-04-22T02:11:33.518057+0530 DEBUG Updated segments for user 11: ['frequency_very_high', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:11:33.580724+0530 DEBUG Updated segments for user 12: ['frequency_medium', 'prefers_email', 'prefers_price_drop', 'active_evening']
+2025-04-22T02:11:33.643334+0530 DEBUG Updated segments for user 13: ['frequency_low', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:11:33.706368+0530 DEBUG Updated segments for user 14: ['frequency_very_low', 'prefers_push', 'prefers_packing', 'active_evening']
+2025-04-22T02:11:33.784734+0530 DEBUG Updated segments for user 15: ['frequency_low', 'prefers_sms', 'prefers_delivery', 'active_evening']
+2025-04-22T02:11:33.847194+0530 DEBUG Updated segments for user 16: ['frequency_very_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:11:33.911304+0530 DEBUG Updated segments for user 17: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:11:33.973580+0530 DEBUG Updated segments for user 18: ['frequency_low', 'prefers_email', 'prefers_shipment', 'active_evening']
+2025-04-22T02:11:34.037147+0530 DEBUG Updated segments for user 19: ['frequency_very_high', 'prefers_email', 'prefers_order_confirmation', 'active_evening']
+2025-04-22T02:11:34.100358+0530 DEBUG Updated segments for user 20: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:11:34.162856+0530 DEBUG Updated segments for user 21: ['frequency_very_low', 'prefers_email', 'prefers_delivery', 'active_evening']
+2025-04-22T02:11:35.011444+0530 DEBUG Message delivered to 1 agents of type recommendation
+2025-04-22T02:11:35.766536+0530 INFO Sent 20 updated profiles to Recommendation System
+2025-04-22T02:11:37.050023+0530 INFO Agent recommendation_9a3eb4af (Recommendation System) starting
+2025-04-22T02:11:37.819844+0530 INFO Received 20 updated profiles from User Profile Service
+2025-04-22T02:11:39.813419+0530 DEBUG RecommendationAgent recommendation_9a3eb4af processing
+2025-04-22T02:11:40.668268+0530 INFO Agent ab_testing_36f0c573 (A/B Testing Module) starting
+2025-04-22T02:11:40.668268+0530 DEBUG ABTestingAgent ab_testing_36f0c573 processing
+2025-04-22T02:11:42.112675+0530 WARNING No eligible users found for A/B test Email Subject Line Test (ID: 1)
+2025-04-22T02:11:42.816683+0530 WARNING No eligible users found for A/B test Notification Timing Test (ID: 2)
+2025-04-22T02:11:43.523373+0530 WARNING No eligible users found for A/B test Channel Preference Test (ID: 3)
+2025-04-22T02:11:43.756467+0530 INFO Analyzing results for A/B test Email Subject Line Test (ID: 1)
+2025-04-22T02:11:45.843677+0530 INFO Updated results for test 1, metric open_rate: {'control': 0.25, 'variant_a': 0.3076923076923077, 'variant_b': 0.36036036036036034}
+2025-04-22T02:11:46.913921+0530 ERROR Error in agent ab_testing_36f0c573: cannot access local variable 'NotificationEngagement' where it is not associated with a value
+2025-04-22T02:11:46.913921+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\ab_testing.py", line 42, in process
+    await self._analyze_test_results(db)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\ab_testing.py", line 178, in _analyze_test_results
+    variant_results = await self._calculate_metric_by_variant(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\ab_testing.py", line 264, in _calculate_metric_by_variant
+    clicks = db.query(NotificationEngagement).filter(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'NotificationEngagement' where it is not associated with a value
+
+2025-04-22T02:11:46.913921+0530 INFO Agent email_service_77887d20 (Email Service) starting
+2025-04-22T02:11:46.913921+0530 DEBUG EmailServiceAgent email_service_77887d20 processing
+2025-04-22T02:11:48.173305+0530 INFO Agent push_notification_07548e6c (Push Notification Service) starting
+2025-04-22T02:11:48.173305+0530 DEBUG PushNotificationAgent push_notification_07548e6c processing
+2025-04-22T02:11:48.968571+0530 INFO Agent sms_gateway_e8142886 (SMS Gateway) starting
+2025-04-22T02:11:48.968571+0530 DEBUG SMSGatewayAgent sms_gateway_e8142886 processing
+2025-04-22T02:11:49.708903+0530 INFO Agent dashboard_alert_f851a8d2 (Dashboard Alert System) starting
+2025-04-22T02:11:49.708903+0530 DEBUG DashboardAlertAgent dashboard_alert_f851a8d2 processing
+2025-04-22T02:11:50.589432+0530 DEBUG DashboardTrackerAgent dashboard_tracker_8abe76a7 processing
+2025-04-22T02:11:52.150958+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:11:53.725909+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:11:55.254879+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:11:56.051765+0530 INFO Sent dashboard metrics for 0 users to analysis agents
+2025-04-22T02:11:56.842016+0530 DEBUG EmailEngagementAgent email_engagement_7adbd1e0 processing
+2025-04-22T02:11:57.576734+0530 ERROR Error processing email engagement: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 2, 'event_type': 'email_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 20, 22, 12, 389000)}}
+2025-04-22T02:11:58.464602+0530 ERROR Error in agent email_engagement_7adbd1e0: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 2, 'event_type': 'email_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 20, 22, 12, 389000)}}
+2025-04-22T02:11:58.466629+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\email_engagement.py", line 34, in process
+    await self._process_recent_engagements(db)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\email_engagement.py", line 80, in _process_recent_engagements
+    self.user_events_collection.insert_one(event)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 628, in insert_one
+    self._insert_one(
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _retry_internal
+    return func(session, sock_info, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 567, in _insert_command
+    _check_write_command_response(result)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 189, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 2, 'event_type': 'email_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 20, 22, 12, 389000)}}
+
+2025-04-22T02:11:58.466685+0530 DEBUG MobileAppEventsAgent mobile_app_events_547b8a25 processing
+2025-04-22T02:11:59.267851+0530 ERROR Error processing mobile app events: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 15, 'event_type': 'push_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 19, 42, 18, 320000)}}
+2025-04-22T02:12:00.079334+0530 ERROR Error in agent mobile_app_events_547b8a25: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 15, 'event_type': 'push_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 19, 42, 18, 320000)}}
+2025-04-22T02:12:00.081384+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\mobile_app_events.py", line 34, in process
+    await self._process_recent_engagements(db)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\mobile_app_events.py", line 80, in _process_recent_engagements
+    self.user_events_collection.insert_one(event)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 628, in insert_one
+    self._insert_one(
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _retry_internal
+    return func(session, sock_info, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 567, in _insert_command
+    _check_write_command_response(result)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 189, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 15, event_type: "push_engagement", timestamp: new Date(1745264538320) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 15, 'event_type': 'push_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 19, 42, 18, 320000)}}
+
+2025-04-22T02:12:00.082379+0530 DEBUG SMSInteractionAgent sms_interaction_5dd0fc07 processing
+2025-04-22T02:12:01.378235+0530 DEBUG Calculated SMS metrics for user 4: 0.0% response rate
+2025-04-22T02:12:01.936953+0530 DEBUG Calculated SMS metrics for user 9: 100.0% response rate
+2025-04-22T02:12:03.424747+0530 DEBUG Calculated SMS metrics for user 10: 20.0% response rate
+2025-04-22T02:12:03.978660+0530 DEBUG Calculated SMS metrics for user 15: 25.0% response rate
+2025-04-22T02:12:04.532280+0530 DEBUG Calculated SMS metrics for user 6: 0.0% response rate
+2025-04-22T02:12:05.097295+0530 DEBUG Calculated SMS metrics for user 12: 0.0% response rate
+2025-04-22T02:12:05.662923+0530 DEBUG Calculated SMS metrics for user 21: 0.0% response rate
+2025-04-22T02:12:06.225489+0530 DEBUG Calculated SMS metrics for user 14: 0.0% response rate
+2025-04-22T02:12:06.774325+0530 DEBUG Calculated SMS metrics for user 3: 0.0% response rate
+2025-04-22T02:12:07.334472+0530 DEBUG Calculated SMS metrics for user 17: 0.0% response rate
+2025-04-22T02:12:07.885469+0530 DEBUG Calculated SMS metrics for user 13: 0.0% response rate
+2025-04-22T02:12:08.442148+0530 DEBUG Calculated SMS metrics for user 5: 0.0% response rate
+2025-04-22T02:12:08.996426+0530 DEBUG Calculated SMS metrics for user 18: 0.0% response rate
+2025-04-22T02:12:09.558223+0530 DEBUG Calculated SMS metrics for user 2: 0.0% response rate
+2025-04-22T02:12:10.430986+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:12:12.219451+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:12:13.840588+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:12:14.616148+0530 INFO Sent SMS metrics for 100 users to analysis agents
+2025-04-22T02:12:16.140335+0530 INFO Received 0 dashboard metrics from Dashboard Tracker
+2025-04-22T02:12:17.674008+0530 INFO Received 100 SMS engagement metrics from SMS Interaction Tracker
+2025-04-22T02:12:24.622115+0530 DEBUG FrequencyAnalysisAgent frequency_analysis_9bb1cb75 processing
+2025-04-22T02:12:24.972769+0530 DEBUG Updated frequency preferences for user 4: low (0.20)
+2025-04-22T02:12:25.089466+0530 DEBUG Updated frequency preferences for user 9: medium (0.57)
+2025-04-22T02:12:25.208830+0530 DEBUG Updated frequency preferences for user 10: very_low (0.15)
+2025-04-22T02:12:25.333019+0530 DEBUG Updated frequency preferences for user 15: low (0.22)
+2025-04-22T02:12:25.452772+0530 DEBUG Updated frequency preferences for user 6: medium (0.55)
+2025-04-22T02:12:25.571776+0530 DEBUG Updated frequency preferences for user 12: medium (0.42)
+2025-04-22T02:12:25.721958+0530 DEBUG Updated frequency preferences for user 21: very_low (0.00)
+2025-04-22T02:12:25.857387+0530 DEBUG Updated frequency preferences for user 14: very_low (0.11)
+2025-04-22T02:12:25.980249+0530 DEBUG Updated frequency preferences for user 3: medium (0.50)
+2025-04-22T02:12:26.097663+0530 DEBUG Updated frequency preferences for user 17: low (0.35)
+2025-04-22T02:12:26.215175+0530 DEBUG Updated frequency preferences for user 13: low (0.30)
+2025-04-22T02:12:26.332566+0530 DEBUG Updated frequency preferences for user 5: low (0.35)
+2025-04-22T02:12:26.453441+0530 DEBUG Updated frequency preferences for user 18: low (0.25)
+2025-04-22T02:12:26.676556+0530 DEBUG Updated frequency preferences for user 2: low (0.20)
+2025-04-22T02:12:26.799594+0530 DEBUG Updated frequency preferences for user 7: medium (0.49)
+2025-04-22T02:12:26.926281+0530 DEBUG Updated frequency preferences for user 19: very_high (1.00)
+2025-04-22T02:12:27.047588+0530 DEBUG Updated frequency preferences for user 20: low (0.30)
+2025-04-22T02:12:27.168415+0530 DEBUG Updated frequency preferences for user 16: very_low (0.15)
+2025-04-22T02:12:27.286212+0530 DEBUG Updated frequency preferences for user 11: very_high (1.00)
+2025-04-22T02:12:27.402909+0530 DEBUG Updated frequency preferences for user 8: high (0.72)
+2025-04-22T02:12:28.064319+0530 DEBUG Updated time preferences for user 2: peak period evening
+2025-04-22T02:12:28.182608+0530 DEBUG Updated time preferences for user 5: peak period evening
+2025-04-22T02:12:28.304547+0530 DEBUG Updated time preferences for user 6: peak period evening
+2025-04-22T02:12:28.420993+0530 DEBUG Updated time preferences for user 7: peak period evening
+2025-04-22T02:12:28.552258+0530 DEBUG Updated time preferences for user 8: peak period evening
+2025-04-22T02:12:28.670786+0530 DEBUG Updated time preferences for user 10: peak period evening
+2025-04-22T02:12:28.794509+0530 DEBUG Updated time preferences for user 13: peak period evening
+2025-04-22T02:12:28.919732+0530 DEBUG Updated time preferences for user 17: peak period evening
+2025-04-22T02:12:29.037454+0530 DEBUG Updated time preferences for user 9: peak period evening
+2025-04-22T02:12:29.154325+0530 DEBUG Updated time preferences for user 11: peak period evening
+2025-04-22T02:12:29.274581+0530 DEBUG Updated time preferences for user 12: peak period evening
+2025-04-22T02:12:29.391524+0530 DEBUG Updated time preferences for user 20: peak period evening
+2025-04-22T02:12:29.508279+0530 DEBUG Updated time preferences for user 21: peak period evening
+2025-04-22T02:12:29.626066+0530 DEBUG Updated time preferences for user 3: peak period evening
+2025-04-22T02:12:29.744053+0530 DEBUG Updated time preferences for user 4: peak period evening
+2025-04-22T02:12:29.870106+0530 DEBUG Updated time preferences for user 19: peak period evening
+2025-04-22T02:12:29.992421+0530 DEBUG Updated time preferences for user 15: peak period evening
+2025-04-22T02:12:30.108576+0530 DEBUG Updated time preferences for user 16: peak period evening
+2025-04-22T02:12:30.226474+0530 DEBUG Updated time preferences for user 18: peak period evening
+2025-04-22T02:12:30.357783+0530 DEBUG Updated time preferences for user 14: peak period evening
+2025-04-22T02:12:31.267957+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:12:32.019907+0530 INFO Sent frequency recommendations for 20 users to User Profile Service
+2025-04-22T02:12:33.609224+0530 INFO Received 0 dashboard section views from Dashboard Tracker
+2025-04-22T02:12:35.151987+0530 INFO Received 0 notification type metrics from SMS Interaction Tracker
+2025-04-22T02:12:35.925502+0530 DEBUG TypeAnalysisAgent type_analysis_746ec6d8 processing
+2025-04-22T02:12:36.165648+0530 DEBUG Updated content preferences for user 21: top type delivery
+2025-04-22T02:12:36.283586+0530 DEBUG Updated content preferences for user 18: top type shipment
+2025-04-22T02:12:36.403166+0530 DEBUG Updated content preferences for user 19: top type order_confirmation
+2025-04-22T02:12:36.531491+0530 DEBUG Updated content preferences for user 15: top type delivery
+2025-04-22T02:12:36.647415+0530 DEBUG Updated content preferences for user 5: top type promotion
+2025-04-22T02:12:36.769725+0530 DEBUG Updated content preferences for user 11: top type packing
+2025-04-22T02:12:36.889704+0530 DEBUG Updated content preferences for user 3: top type packing
+2025-04-22T02:12:37.022102+0530 DEBUG Updated content preferences for user 13: top type packing
+2025-04-22T02:12:37.197090+0530 DEBUG Updated content preferences for user 10: top type return
+2025-04-22T02:12:37.318511+0530 DEBUG Updated content preferences for user 17: top type promotion
+2025-04-22T02:12:37.437499+0530 DEBUG Updated content preferences for user 9: top type promotion
+2025-04-22T02:12:37.601022+0530 DEBUG Updated content preferences for user 20: top type promotion
+2025-04-22T02:12:37.733651+0530 DEBUG Updated content preferences for user 14: top type packing
+2025-04-22T02:12:37.851239+0530 DEBUG Updated content preferences for user 7: top type price_drop
+2025-04-22T02:12:37.971367+0530 DEBUG Updated content preferences for user 4: top type delivery
+2025-04-22T02:12:38.090055+0530 DEBUG Updated content preferences for user 12: top type price_drop
+2025-04-22T02:12:38.209168+0530 DEBUG Updated content preferences for user 2: top type promotion
+2025-04-22T02:12:38.324772+0530 DEBUG Updated content preferences for user 8: top type restock
+2025-04-22T02:12:38.447866+0530 DEBUG Updated content preferences for user 6: top type order_confirmation
+2025-04-22T02:12:39.258775+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:12:40.046916+0530 INFO Sent content recommendations for 20 users to User Profile Service
+2025-04-22T02:12:41.596218+0530 INFO Received 0 channel engagements from Dashboard Tracker
+2025-04-22T02:12:43.126582+0530 INFO Received 100 channel engagements from SMS Interaction Tracker
+2025-04-22T02:12:50.402093+0530 DEBUG ChannelAnalysisAgent channel_analysis_0381c703 processing
+2025-04-22T02:12:51.161761+0530 DEBUG Updated channel preferences for user 2: top channel email
+2025-04-22T02:12:51.280016+0530 DEBUG Updated channel preferences for user 18: top channel email
+2025-04-22T02:12:51.396888+0530 DEBUG Updated channel preferences for user 5: top channel email
+2025-04-22T02:12:51.518623+0530 DEBUG Updated channel preferences for user 13: top channel email
+2025-04-22T02:12:51.638908+0530 DEBUG Updated channel preferences for user 17: top channel email
+2025-04-22T02:12:51.759087+0530 DEBUG Updated channel preferences for user 3: top channel email
+2025-04-22T02:12:51.875964+0530 DEBUG Updated channel preferences for user 14: top channel push
+2025-04-22T02:12:51.994258+0530 DEBUG Updated channel preferences for user 21: top channel email
+2025-04-22T02:12:52.110563+0530 DEBUG Updated channel preferences for user 12: top channel email
+2025-04-22T02:12:52.229366+0530 DEBUG Updated channel preferences for user 6: top channel push
+2025-04-22T02:12:52.364285+0530 DEBUG Updated channel preferences for user 15: top channel sms
+2025-04-22T02:12:52.503641+0530 DEBUG Updated channel preferences for user 10: top channel sms
+2025-04-22T02:12:52.622244+0530 DEBUG Updated channel preferences for user 9: top channel sms
+2025-04-22T02:12:52.741122+0530 DEBUG Updated channel preferences for user 4: top channel email
+2025-04-22T02:12:52.860398+0530 DEBUG Updated channel preferences for user 8: top channel push
+2025-04-22T02:12:52.979937+0530 DEBUG Updated channel preferences for user 11: top channel email
+2025-04-22T02:12:53.098836+0530 DEBUG Updated channel preferences for user 16: top channel email
+2025-04-22T02:12:53.239353+0530 DEBUG Updated channel preferences for user 20: top channel email
+2025-04-22T02:12:53.361973+0530 DEBUG Updated channel preferences for user 19: top channel email
+2025-04-22T02:12:53.486173+0530 DEBUG Updated channel preferences for user 7: top channel email
+2025-04-22T02:12:54.381788+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:12:55.134351+0530 INFO Sent channel recommendations for 20 users to User Profile Service
+2025-04-22T02:12:57.164598+0530 INFO Received frequency recommendations for 20 users from Frequency Analysis
+2025-04-22T02:13:00.222959+0530 INFO Received content recommendations for 20 users from Type Analysis
+2025-04-22T02:13:03.021814+0530 INFO Received channel recommendations for 20 users from Channel Analysis
+2025-04-22T02:13:05.597234+0530 DEBUG UserProfileAgent user_profile_b0ad643a processing
+2025-04-22T02:13:05.791065+0530 INFO Merging updates for 20 user profiles
+2025-04-22T02:13:05.974249+0530 DEBUG Updated segments for user 2: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:13:06.037549+0530 DEBUG Updated segments for user 3: ['frequency_medium', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:13:06.098379+0530 DEBUG Updated segments for user 4: ['frequency_low', 'prefers_email', 'prefers_delivery', 'active_evening']
+2025-04-22T02:13:06.158224+0530 DEBUG Updated segments for user 5: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:13:06.220744+0530 DEBUG Updated segments for user 6: ['frequency_medium', 'prefers_push', 'prefers_order_confirmation', 'active_evening']
+2025-04-22T02:13:06.283395+0530 DEBUG Updated segments for user 7: ['frequency_medium', 'prefers_email', 'prefers_price_drop', 'active_evening']
+2025-04-22T02:13:06.343954+0530 DEBUG Updated segments for user 8: ['frequency_high', 'prefers_push', 'prefers_restock', 'active_evening']
+2025-04-22T02:13:06.404744+0530 DEBUG Updated segments for user 9: ['frequency_medium', 'prefers_sms', 'prefers_promotion', 'active_evening']
+2025-04-22T02:13:06.464581+0530 DEBUG Updated segments for user 10: ['frequency_very_low', 'prefers_sms', 'prefers_return', 'active_evening']
+2025-04-22T02:13:06.527624+0530 DEBUG Updated segments for user 11: ['frequency_very_high', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:13:06.589544+0530 DEBUG Updated segments for user 12: ['frequency_medium', 'prefers_email', 'prefers_price_drop', 'active_evening']
+2025-04-22T02:13:06.651186+0530 DEBUG Updated segments for user 13: ['frequency_low', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:13:06.713807+0530 DEBUG Updated segments for user 14: ['frequency_very_low', 'prefers_push', 'prefers_packing', 'active_evening']
+2025-04-22T02:13:06.784944+0530 DEBUG Updated segments for user 15: ['frequency_low', 'prefers_sms', 'prefers_delivery', 'active_evening']
+2025-04-22T02:13:06.848893+0530 DEBUG Updated segments for user 16: ['frequency_very_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:13:06.909324+0530 DEBUG Updated segments for user 17: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:13:06.969905+0530 DEBUG Updated segments for user 18: ['frequency_low', 'prefers_email', 'prefers_shipment', 'active_evening']
+2025-04-22T02:13:07.030259+0530 DEBUG Updated segments for user 19: ['frequency_very_high', 'prefers_email', 'prefers_order_confirmation', 'active_evening']
+2025-04-22T02:13:07.092783+0530 DEBUG Updated segments for user 20: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:13:07.152623+0530 DEBUG Updated segments for user 21: ['frequency_very_low', 'prefers_email', 'prefers_delivery', 'active_evening']
+2025-04-22T02:13:08.019616+0530 DEBUG Message delivered to 1 agents of type recommendation
+2025-04-22T02:13:08.811417+0530 INFO Sent 20 updated profiles to Recommendation System
+2025-04-22T02:13:10.338105+0530 INFO Received 20 updated profiles from User Profile Service
+2025-04-22T02:13:12.224935+0530 DEBUG RecommendationAgent recommendation_9a3eb4af processing
+2025-04-22T02:13:12.472086+0530 INFO A/B test 1: Variant variant_a outperformed control for metric open_rate
+2025-04-22T02:13:13.931134+0530 ERROR Error in agent recommendation_9a3eb4af: 'Session' object has no attribute 'models'
+2025-04-22T02:13:13.932990+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\recommendation.py", line 35, in process
+    await self._check_ab_test_results()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\recommendation.py", line 128, in _check_ab_test_results
+    await self._update_strategies_from_test(test_id, variant, result)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\recommendation.py", line 241, in _update_strategies_from_test
+    ab_test = db.query(db.models.ABTest).filter_by(id=test_id).first()
+                       ^^^^^^^^^
+AttributeError: 'Session' object has no attribute 'models'
+
+2025-04-22T02:13:13.933989+0530 DEBUG ABTestingAgent ab_testing_36f0c573 processing
+2025-04-22T02:13:15.347245+0530 WARNING No eligible users found for A/B test Email Subject Line Test (ID: 1)
+2025-04-22T02:13:16.045020+0530 WARNING No eligible users found for A/B test Notification Timing Test (ID: 2)
+2025-04-22T02:13:16.741400+0530 WARNING No eligible users found for A/B test Channel Preference Test (ID: 3)
+2025-04-22T02:13:16.974101+0530 INFO Analyzing results for A/B test Email Subject Line Test (ID: 1)
+2025-04-22T02:13:19.726539+0530 INFO Updated results for test 1, metric open_rate: {'control': 0.25, 'variant_a': 0.3076923076923077, 'variant_b': 0.36036036036036034}
+2025-04-22T02:13:20.993609+0530 ERROR Error in agent ab_testing_36f0c573: cannot access local variable 'NotificationEngagement' where it is not associated with a value
+2025-04-22T02:13:20.994386+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\ab_testing.py", line 42, in process
+    await self._analyze_test_results(db)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\ab_testing.py", line 178, in _analyze_test_results
+    variant_results = await self._calculate_metric_by_variant(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\ab_testing.py", line 264, in _calculate_metric_by_variant
+    clicks = db.query(NotificationEngagement).filter(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'NotificationEngagement' where it is not associated with a value
+
+2025-04-22T02:13:20.995379+0530 DEBUG EmailServiceAgent email_service_77887d20 processing
+2025-04-22T02:13:21.743351+0530 DEBUG PushNotificationAgent push_notification_07548e6c processing
+2025-04-22T02:13:22.529059+0530 DEBUG SMSGatewayAgent sms_gateway_e8142886 processing
+2025-04-22T02:13:23.309355+0530 DEBUG DashboardAlertAgent dashboard_alert_f851a8d2 processing
+2025-04-22T02:13:24.420993+0530 DEBUG DashboardTrackerAgent dashboard_tracker_8abe76a7 processing
+2025-04-22T02:13:25.976825+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:13:27.492045+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:13:28.999121+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:13:29.745802+0530 INFO Sent dashboard metrics for 0 users to analysis agents
+2025-04-22T02:13:30.540645+0530 DEBUG EmailEngagementAgent email_engagement_7adbd1e0 processing
+2025-04-22T02:13:31.296780+0530 ERROR Error processing email engagement: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 2, 'event_type': 'email_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 20, 22, 12, 389000)}}
+2025-04-22T02:13:32.209950+0530 ERROR Error in agent email_engagement_7adbd1e0: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 2, 'event_type': 'email_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 20, 22, 12, 389000)}}
+2025-04-22T02:13:32.210949+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\email_engagement.py", line 34, in process
+    await self._process_recent_engagements(db)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\email_engagement.py", line 80, in _process_recent_engagements
+    self.user_events_collection.insert_one(event)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 628, in insert_one
+    self._insert_one(
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _retry_internal
+    return func(session, sock_info, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 567, in _insert_command
+    _check_write_command_response(result)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 189, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 2, event_type: "email_engagement", timestamp: new Date(1745266932389) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 2, 'event_type': 'email_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 20, 22, 12, 389000)}}
+
+2025-04-22T02:13:32.211946+0530 DEBUG MobileAppEventsAgent mobile_app_events_547b8a25 processing
+2025-04-22T02:13:32.984343+0530 ERROR Error processing mobile app events: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 6, event_type: "push_engagement", timestamp: new Date(1745265130647) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 6, event_type: "push_engagement", timestamp: new Date(1745265130647) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 6, 'event_type': 'push_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 19, 52, 10, 647000)}}
+2025-04-22T02:13:35.200367+0530 ERROR Error in agent mobile_app_events_547b8a25: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 6, event_type: "push_engagement", timestamp: new Date(1745265130647) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 6, event_type: "push_engagement", timestamp: new Date(1745265130647) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 6, 'event_type': 'push_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 19, 52, 10, 647000)}}
+2025-04-22T02:13:35.203362+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\mobile_app_events.py", line 34, in process
+    await self._process_recent_engagements(db)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\data_collection\mobile_app_events.py", line 80, in _process_recent_engagements
+    self.user_events_collection.insert_one(event)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 628, in insert_one
+    self._insert_one(
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 569, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1476, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1349, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\mongo_client.py", line 1390, in _retry_internal
+    return func(session, sock_info, retryable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\collection.py", line 567, in _insert_command
+    _check_write_command_response(result)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 217, in _check_write_command_response
+    _raise_last_write_error(write_errors)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\.venv\Lib\site-packages\pymongo\helpers.py", line 189, in _raise_last_write_error
+    raise DuplicateKeyError(error.get("errmsg"), 11000, error)
+pymongo.errors.DuplicateKeyError: E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 6, event_type: "push_engagement", timestamp: new Date(1745265130647) }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: notification_system.user_events index: user_id_1_event_type_1_timestamp_1 dup key: { user_id: 6, event_type: "push_engagement", timestamp: new Date(1745265130647) }', 'keyPattern': {'user_id': 1, 'event_type': 1, 'timestamp': 1}, 'keyValue': {'user_id': 6, 'event_type': 'push_engagement', 'timestamp': datetime.datetime(2025, 4, 21, 19, 52, 10, 647000)}}
+
+2025-04-22T02:13:35.204358+0530 DEBUG SMSInteractionAgent sms_interaction_5dd0fc07 processing
+2025-04-22T02:13:36.399774+0530 DEBUG Calculated SMS metrics for user 4: 0.0% response rate
+2025-04-22T02:13:36.920887+0530 DEBUG Calculated SMS metrics for user 9: 100.0% response rate
+2025-04-22T02:13:37.440112+0530 DEBUG Calculated SMS metrics for user 10: 20.0% response rate
+2025-04-22T02:13:37.968702+0530 DEBUG Calculated SMS metrics for user 15: 25.0% response rate
+2025-04-22T02:13:38.487064+0530 DEBUG Calculated SMS metrics for user 6: 0.0% response rate
+2025-04-22T02:13:39.033614+0530 DEBUG Calculated SMS metrics for user 12: 0.0% response rate
+2025-04-22T02:13:39.544066+0530 DEBUG Calculated SMS metrics for user 21: 0.0% response rate
+2025-04-22T02:13:40.789432+0530 DEBUG Calculated SMS metrics for user 14: 0.0% response rate
+2025-04-22T02:13:41.307213+0530 DEBUG Calculated SMS metrics for user 3: 0.0% response rate
+2025-04-22T02:13:41.839347+0530 DEBUG Calculated SMS metrics for user 17: 0.0% response rate
+2025-04-22T02:13:42.359994+0530 DEBUG Calculated SMS metrics for user 13: 0.0% response rate
+2025-04-22T02:13:42.883167+0530 DEBUG Calculated SMS metrics for user 5: 0.0% response rate
+2025-04-22T02:13:43.402993+0530 DEBUG Calculated SMS metrics for user 18: 0.0% response rate
+2025-04-22T02:13:43.916942+0530 DEBUG Calculated SMS metrics for user 2: 0.0% response rate
+2025-04-22T02:13:44.836032+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:13:46.347953+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:13:47.932614+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:13:48.714059+0530 INFO Sent SMS metrics for 100 users to analysis agents
+2025-04-22T02:13:50.266152+0530 INFO Received 0 dashboard metrics from Dashboard Tracker
+2025-04-22T02:13:52.309636+0530 INFO Received 100 SMS engagement metrics from SMS Interaction Tracker

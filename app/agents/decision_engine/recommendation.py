@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 
 from app.agents.base_agent import BaseAgent
 from app.db.database import get_db, get_mongo_collection
-from app.db.models import Notification, User
+from app.db.models import Notification, User, NotificationEngagement
 from config.constants import AgentType, Collections, NotificationChannel, NotificationType, TimeOfDay
 
 
@@ -237,8 +237,10 @@ class RecommendationAgent(BaseAgent):
             result (Dict[str, Any]): The test result data
         """
         # Get test details from database
+        from app.db import models
         db = next(get_db())
-        ab_test = db.query(db.models.ABTest).filter_by(id=test_id).first()
+
+        ab_test = db.query(models.ABTest).filter_by(id=test_id).first()
 
         if not ab_test:
             logger.error(f"A/B test {test_id} not found in database")

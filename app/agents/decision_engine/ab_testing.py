@@ -12,6 +12,8 @@ from app.db.models import ABTest, ABTestAssignment, User, Notification
 from config.constants import AgentType, Collections, NotificationChannel, NotificationType
 from config.config import current_config
 
+from app.db.models import ABTest, ABTestAssignment, User, Notification, NotificationEngagement
+
 
 class ABTestingAgent(BaseAgent):
     """
@@ -234,9 +236,10 @@ class ABTestingAgent(BaseAgent):
                     continue
 
                 # Count how many were opened
-                opens = db.query(db.models.NotificationEngagement).filter(
-                    db.models.NotificationEngagement.notification_id.in_(notification_ids),
-                    db.models.NotificationEngagement.action == "open"
+
+                opens = db.query(NotificationEngagement).filter(
+                    NotificationEngagement.notification_id.in_(notification_ids),
+                    NotificationEngagement.action == "open"
                 ).count()
 
                 # Calculate open rate
@@ -257,9 +260,9 @@ class ABTestingAgent(BaseAgent):
                     continue
 
                 # Count how many were clicked
-                clicks = db.query(db.models.NotificationEngagement).filter(
-                    db.models.NotificationEngagement.notification_id.in_(notification_ids),
-                    db.models.NotificationEngagement.action == "click"
+                clicks = db.query(NotificationEngagement).filter(
+                    NotificationEngagement.notification_id.in_(notification_ids),
+                    NotificationEngagement.action == "click"
                 ).count()
 
                 # Calculate click rate

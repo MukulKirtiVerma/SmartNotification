@@ -1,0 +1,502 @@
+2025-04-22T02:40:26.946474+0530 INFO Starting Smart Notification System
+2025-04-22T02:40:33.582776+0530 INFO Database tables initialized
+2025-04-22T02:40:33.583810+0530 INFO Agent dashboard_tracker_a1024b28 registered as dashboard_tracker
+2025-04-22T02:40:33.584807+0530 INFO Agent dashboard_tracker_a1024b28 (Dashboard Tracker) initialized
+2025-04-22T02:40:33.584807+0530 INFO Agent email_engagement_320755f2 registered as email_engagement
+2025-04-22T02:40:33.585802+0530 INFO Agent email_engagement_320755f2 (Email Engagement Tracker) initialized
+2025-04-22T02:40:33.586800+0530 INFO Agent mobile_app_events_6943ca75 registered as mobile_app_events
+2025-04-22T02:40:33.587798+0530 INFO Agent mobile_app_events_6943ca75 (Mobile App Events Tracker) initialized
+2025-04-22T02:40:33.587798+0530 INFO Agent sms_interaction_5c0400d5 registered as sms_interaction
+2025-04-22T02:40:33.588796+0530 INFO Agent sms_interaction_5c0400d5 (SMS Interaction Tracker) initialized
+2025-04-22T02:40:33.588796+0530 INFO Agent frequency_analysis_7488cd32 registered as frequency_analysis
+2025-04-22T02:40:33.589838+0530 INFO Agent frequency_analysis_7488cd32 (Frequency Analysis) initialized
+2025-04-22T02:40:33.589838+0530 INFO Agent type_analysis_748b5e9e registered as type_analysis
+2025-04-22T02:40:33.590835+0530 INFO Agent type_analysis_748b5e9e (Type Analysis) initialized
+2025-04-22T02:40:33.590835+0530 INFO Agent channel_analysis_1e8af253 registered as channel_analysis
+2025-04-22T02:40:33.591950+0530 INFO Agent channel_analysis_1e8af253 (Channel Analysis) initialized
+2025-04-22T02:40:33.592040+0530 INFO Agent user_profile_08b62314 registered as user_profile
+2025-04-22T02:40:33.592040+0530 INFO Agent user_profile_08b62314 (User Profile Service) initialized
+2025-04-22T02:40:33.593072+0530 INFO Agent recommendation_31feac1b registered as recommendation
+2025-04-22T02:40:33.594041+0530 INFO Agent recommendation_31feac1b (Recommendation System) initialized
+2025-04-22T02:40:33.594041+0530 INFO Agent ab_testing_932fa8c8 registered as ab_testing
+2025-04-22T02:40:33.595038+0530 INFO Agent ab_testing_932fa8c8 (A/B Testing Module) initialized
+2025-04-22T02:40:33.596035+0530 INFO Agent email_service_c0378067 registered as email_service
+2025-04-22T02:40:33.596035+0530 INFO Agent email_service_c0378067 (Email Service) initialized
+2025-04-22T02:40:33.597033+0530 INFO Agent push_notification_75e3fdaa registered as push_notification
+2025-04-22T02:40:33.597033+0530 INFO Agent push_notification_75e3fdaa (Push Notification Service) initialized
+2025-04-22T02:40:33.598262+0530 INFO Agent sms_gateway_105a3e8d registered as sms_gateway
+2025-04-22T02:40:33.598262+0530 INFO Agent sms_gateway_105a3e8d (SMS Gateway) initialized
+2025-04-22T02:40:33.598262+0530 INFO Agent dashboard_alert_baab8a4a registered as dashboard_alert
+2025-04-22T02:40:33.599293+0530 INFO Agent dashboard_alert_baab8a4a (Dashboard Alert System) initialized
+2025-04-22T02:40:33.599293+0530 INFO Starting 14 agents
+2025-04-22T02:40:33.600295+0530 INFO All agents started
+2025-04-22T02:40:33.601288+0530 INFO Smart Notification System started successfully
+2025-04-22T02:40:33.601288+0530 INFO Agent dashboard_tracker_a1024b28 (Dashboard Tracker) starting
+2025-04-22T02:40:33.602253+0530 DEBUG DashboardTrackerAgent dashboard_tracker_a1024b28 processing
+2025-04-22T02:40:36.810828+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:40:38.274453+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:40:39.721703+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:40:40.452105+0530 INFO Sent dashboard metrics for 0 users to analysis agents
+2025-04-22T02:40:41.184752+0530 INFO Agent email_engagement_320755f2 (Email Engagement Tracker) starting
+2025-04-22T02:40:41.185747+0530 DEBUG EmailEngagementAgent email_engagement_320755f2 processing
+2025-04-22T02:40:41.930454+0530 DEBUG Processed email engagement for user 2, action: open
+2025-04-22T02:40:42.197520+0530 DEBUG Processed email engagement for user 9, action: open
+2025-04-22T02:40:42.467088+0530 DEBUG Processed email engagement for user 17, action: click
+2025-04-22T02:40:42.504588+0530 DEBUG Processed email engagement for user 17, action: open
+2025-04-22T02:40:43.479455+0530 DEBUG Calculated email metrics for user 4: 100.0% open rate, 0.0% click rate
+2025-04-22T02:40:44.201329+0530 DEBUG Calculated email metrics for user 7: 50.0% open rate, 50.0% click rate
+2025-04-22T02:40:45.026070+0530 DEBUG Calculated email metrics for user 9: 33.3% open rate, 0.0% click rate
+2025-04-22T02:40:45.744605+0530 DEBUG Calculated email metrics for user 15: 50.0% open rate, 0.0% click rate
+2025-04-22T02:40:46.483015+0530 DEBUG Calculated email metrics for user 6: 100.0% open rate, 0.0% click rate
+2025-04-22T02:40:47.213682+0530 DEBUG Calculated email metrics for user 12: 60.0% open rate, 40.0% click rate
+2025-04-22T02:40:47.938548+0530 DEBUG Calculated email metrics for user 19: 100.0% open rate, 60.0% click rate
+2025-04-22T02:40:48.661345+0530 DEBUG Calculated email metrics for user 3: 100.0% open rate, 100.0% click rate
+2025-04-22T02:40:49.391858+0530 DEBUG Calculated email metrics for user 17: 100.0% open rate, 50.0% click rate
+2025-04-22T02:40:50.110846+0530 DEBUG Calculated email metrics for user 20: 100.0% open rate, 0.0% click rate
+2025-04-22T02:40:50.830115+0530 DEBUG Calculated email metrics for user 13: 100.0% open rate, 0.0% click rate
+2025-04-22T02:40:51.546358+0530 DEBUG Calculated email metrics for user 5: 100.0% open rate, 50.0% click rate
+2025-04-22T02:40:52.267516+0530 DEBUG Calculated email metrics for user 18: 100.0% open rate, 0.0% click rate
+2025-04-22T02:40:52.989812+0530 DEBUG Calculated email metrics for user 2: 100.0% open rate, 0.0% click rate
+2025-04-22T02:40:53.710729+0530 DEBUG Calculated email metrics for user 16: 50.0% open rate, 0.0% click rate
+2025-04-22T02:40:54.432118+0530 DEBUG Calculated email metrics for user 11: 100.0% open rate, 100.0% click rate
+2025-04-22T02:40:55.174710+0530 DEBUG Calculated email metrics for user 8: 66.7% open rate, 0.0% click rate
+2025-04-22T02:40:57.434218+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:40:58.895692+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:41:00.423685+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:41:01.148550+0530 INFO Sent email metrics for 100 users to analysis agents
+2025-04-22T02:41:01.873151+0530 INFO Agent mobile_app_events_6943ca75 (Mobile App Events Tracker) starting
+2025-04-22T02:41:01.873151+0530 DEBUG MobileAppEventsAgent mobile_app_events_6943ca75 processing
+2025-04-22T02:41:03.537245+0530 DEBUG Calculated mobile metrics for user 4: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:04.504293+0530 DEBUG Calculated mobile metrics for user 9: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:05.463796+0530 DEBUG Calculated mobile metrics for user 10: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:06.416404+0530 DEBUG Calculated mobile metrics for user 7: 50.0% open rate, 0.0% click rate
+2025-04-22T02:41:07.488135+0530 DEBUG Calculated mobile metrics for user 15: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:08.565795+0530 DEBUG Calculated mobile metrics for user 6: 0.0% open rate, 100.0% click rate
+2025-04-22T02:41:09.545343+0530 DEBUG Calculated mobile metrics for user 12: 0.0% open rate, 50.0% click rate
+2025-04-22T02:41:10.539831+0530 DEBUG Calculated mobile metrics for user 21: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:11.508388+0530 DEBUG Calculated mobile metrics for user 14: 50.0% open rate, 0.0% click rate
+2025-04-22T02:41:12.484706+0530 DEBUG Calculated mobile metrics for user 3: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:13.448128+0530 DEBUG Calculated mobile metrics for user 17: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:14.420440+0530 DEBUG Calculated mobile metrics for user 20: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:15.387257+0530 DEBUG Calculated mobile metrics for user 13: 20.0% open rate, 20.0% click rate
+2025-04-22T02:41:16.363904+0530 DEBUG Calculated mobile metrics for user 5: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:17.792310+0530 DEBUG Calculated mobile metrics for user 18: 33.3% open rate, 0.0% click rate
+2025-04-22T02:41:18.753973+0530 DEBUG Calculated mobile metrics for user 2: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:19.708578+0530 DEBUG Calculated mobile metrics for user 16: 0.0% open rate, 0.0% click rate
+2025-04-22T02:41:20.676539+0530 DEBUG Calculated mobile metrics for user 8: 0.0% open rate, 100.0% click rate
+2025-04-22T02:41:21.490213+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:41:22.937475+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:41:24.421881+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:41:25.137947+0530 INFO Sent mobile metrics for 100 users to analysis agents
+2025-04-22T02:41:25.878905+0530 INFO Agent sms_interaction_5c0400d5 (SMS Interaction Tracker) starting
+2025-04-22T02:41:25.878905+0530 DEBUG SMSInteractionAgent sms_interaction_5c0400d5 processing
+2025-04-22T02:41:27.083638+0530 DEBUG Calculated SMS metrics for user 4: 0.0% response rate
+2025-04-22T02:41:27.589940+0530 DEBUG Calculated SMS metrics for user 9: 100.0% response rate
+2025-04-22T02:41:28.084839+0530 DEBUG Calculated SMS metrics for user 10: 20.0% response rate
+2025-04-22T02:41:28.587041+0530 DEBUG Calculated SMS metrics for user 15: 25.0% response rate
+2025-04-22T02:41:29.085864+0530 DEBUG Calculated SMS metrics for user 6: 0.0% response rate
+2025-04-22T02:41:29.586372+0530 DEBUG Calculated SMS metrics for user 12: 0.0% response rate
+2025-04-22T02:41:30.087993+0530 DEBUG Calculated SMS metrics for user 21: 0.0% response rate
+2025-04-22T02:41:30.585675+0530 DEBUG Calculated SMS metrics for user 14: 0.0% response rate
+2025-04-22T02:41:31.095158+0530 DEBUG Calculated SMS metrics for user 3: 0.0% response rate
+2025-04-22T02:41:31.593160+0530 DEBUG Calculated SMS metrics for user 17: 0.0% response rate
+2025-04-22T02:41:32.088975+0530 DEBUG Calculated SMS metrics for user 13: 0.0% response rate
+2025-04-22T02:41:32.590303+0530 DEBUG Calculated SMS metrics for user 5: 0.0% response rate
+2025-04-22T02:41:33.085570+0530 DEBUG Calculated SMS metrics for user 18: 0.0% response rate
+2025-04-22T02:41:33.591400+0530 DEBUG Calculated SMS metrics for user 2: 0.0% response rate
+2025-04-22T02:41:34.425666+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:41:35.910348+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:41:37.404145+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:41:38.150406+0530 INFO Sent SMS metrics for 100 users to analysis agents
+2025-04-22T02:41:38.885014+0530 INFO Agent frequency_analysis_7488cd32 (Frequency Analysis) starting
+2025-04-22T02:41:39.624431+0530 INFO Received 0 dashboard metrics from Dashboard Tracker
+2025-04-22T02:41:41.129196+0530 INFO Received 100 email engagement metrics from Email Engagement Tracker
+2025-04-22T02:41:47.014084+0530 INFO Received 100 mobile engagement metrics from Mobile App Events Tracker
+2025-04-22T02:41:52.447591+0530 INFO Received 100 SMS engagement metrics from SMS Interaction Tracker
+2025-04-22T02:41:57.081626+0530 DEBUG FrequencyAnalysisAgent frequency_analysis_7488cd32 processing
+2025-04-22T02:41:57.391058+0530 DEBUG Updated frequency preferences for user 4: low (0.20)
+2025-04-22T02:41:57.457756+0530 DEBUG Updated frequency preferences for user 9: medium (0.57)
+2025-04-22T02:41:57.527110+0530 DEBUG Updated frequency preferences for user 10: very_low (0.15)
+2025-04-22T02:41:57.593452+0530 DEBUG Updated frequency preferences for user 15: low (0.22)
+2025-04-22T02:41:57.659090+0530 DEBUG Updated frequency preferences for user 6: medium (0.55)
+2025-04-22T02:41:57.727227+0530 DEBUG Updated frequency preferences for user 12: medium (0.42)
+2025-04-22T02:41:57.791712+0530 DEBUG Updated frequency preferences for user 21: very_low (0.00)
+2025-04-22T02:41:57.859441+0530 DEBUG Updated frequency preferences for user 14: very_low (0.11)
+2025-04-22T02:41:57.953058+0530 DEBUG Updated frequency preferences for user 3: medium (0.50)
+2025-04-22T02:41:58.021217+0530 DEBUG Updated frequency preferences for user 17: low (0.35)
+2025-04-22T02:41:58.089681+0530 DEBUG Updated frequency preferences for user 13: low (0.30)
+2025-04-22T02:41:58.157089+0530 DEBUG Updated frequency preferences for user 5: low (0.35)
+2025-04-22T02:41:58.222627+0530 DEBUG Updated frequency preferences for user 18: low (0.25)
+2025-04-22T02:41:58.290923+0530 DEBUG Updated frequency preferences for user 2: low (0.20)
+2025-04-22T02:41:58.356225+0530 DEBUG Updated frequency preferences for user 7: medium (0.49)
+2025-04-22T02:41:58.438141+0530 DEBUG Updated frequency preferences for user 19: very_high (1.00)
+2025-04-22T02:41:58.506557+0530 DEBUG Updated frequency preferences for user 20: low (0.30)
+2025-04-22T02:41:58.608797+0530 DEBUG Updated frequency preferences for user 16: very_low (0.15)
+2025-04-22T02:41:58.689975+0530 DEBUG Updated frequency preferences for user 11: very_high (1.00)
+2025-04-22T02:41:58.760162+0530 DEBUG Updated frequency preferences for user 8: high (0.72)
+2025-04-22T02:41:58.922002+0530 DEBUG Updated time preferences for user 2: peak period evening
+2025-04-22T02:41:58.989865+0530 DEBUG Updated time preferences for user 5: peak period evening
+2025-04-22T02:41:59.056805+0530 DEBUG Updated time preferences for user 6: peak period evening
+2025-04-22T02:41:59.124322+0530 DEBUG Updated time preferences for user 7: peak period evening
+2025-04-22T02:41:59.238669+0530 DEBUG Updated time preferences for user 8: peak period evening
+2025-04-22T02:41:59.314408+0530 DEBUG Updated time preferences for user 10: peak period evening
+2025-04-22T02:41:59.390057+0530 DEBUG Updated time preferences for user 13: peak period evening
+2025-04-22T02:41:59.457782+0530 DEBUG Updated time preferences for user 17: peak period evening
+2025-04-22T02:41:59.523810+0530 DEBUG Updated time preferences for user 9: peak period evening
+2025-04-22T02:41:59.607099+0530 DEBUG Updated time preferences for user 11: peak period evening
+2025-04-22T02:41:59.677945+0530 DEBUG Updated time preferences for user 12: peak period evening
+2025-04-22T02:41:59.748199+0530 DEBUG Updated time preferences for user 20: peak period evening
+2025-04-22T02:41:59.829196+0530 DEBUG Updated time preferences for user 21: peak period evening
+2025-04-22T02:41:59.898244+0530 DEBUG Updated time preferences for user 3: peak period evening
+2025-04-22T02:41:59.965448+0530 DEBUG Updated time preferences for user 4: peak period evening
+2025-04-22T02:42:00.032774+0530 DEBUG Updated time preferences for user 19: peak period evening
+2025-04-22T02:42:00.099279+0530 DEBUG Updated time preferences for user 15: peak period evening
+2025-04-22T02:42:00.167945+0530 DEBUG Updated time preferences for user 16: peak period evening
+2025-04-22T02:42:00.236118+0530 DEBUG Updated time preferences for user 18: peak period evening
+2025-04-22T02:42:00.302062+0530 DEBUG Updated time preferences for user 14: peak period evening
+2025-04-22T02:42:01.065049+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:42:01.798896+0530 INFO Sent frequency recommendations for 20 users to User Profile Service
+2025-04-22T02:42:02.531343+0530 INFO Agent type_analysis_748b5e9e (Type Analysis) starting
+2025-04-22T02:42:03.254285+0530 INFO Received 0 dashboard section views from Dashboard Tracker
+2025-04-22T02:42:04.719472+0530 INFO Received 44 notification type metrics from Email Engagement Tracker
+2025-04-22T02:42:07.920818+0530 INFO Received 16 notification type metrics from Mobile App Events Tracker
+2025-04-22T02:42:10.225908+0530 INFO Received 0 notification type metrics from SMS Interaction Tracker
+2025-04-22T02:42:10.961021+0530 DEBUG TypeAnalysisAgent type_analysis_748b5e9e processing
+2025-04-22T02:42:11.210339+0530 DEBUG Updated content preferences for user 21: top type delivery
+2025-04-22T02:42:11.282417+0530 DEBUG Updated content preferences for user 18: top type shipment
+2025-04-22T02:42:11.355043+0530 DEBUG Updated content preferences for user 19: top type order_confirmation
+2025-04-22T02:42:11.424363+0530 DEBUG Updated content preferences for user 15: top type delivery
+2025-04-22T02:42:11.493490+0530 DEBUG Updated content preferences for user 5: top type promotion
+2025-04-22T02:42:11.595819+0530 DEBUG Updated content preferences for user 11: top type packing
+2025-04-22T02:42:11.672205+0530 DEBUG Updated content preferences for user 3: top type packing
+2025-04-22T02:42:11.740762+0530 DEBUG Updated content preferences for user 13: top type packing
+2025-04-22T02:42:11.821604+0530 DEBUG Updated content preferences for user 10: top type return
+2025-04-22T02:42:11.893248+0530 DEBUG Updated content preferences for user 17: top type promotion
+2025-04-22T02:42:11.959919+0530 DEBUG Updated content preferences for user 9: top type promotion
+2025-04-22T02:42:12.026738+0530 DEBUG Updated content preferences for user 20: top type promotion
+2025-04-22T02:42:12.111195+0530 DEBUG Updated content preferences for user 14: top type packing
+2025-04-22T02:42:12.179741+0530 DEBUG Updated content preferences for user 7: top type price_drop
+2025-04-22T02:42:12.293223+0530 DEBUG Updated content preferences for user 4: top type delivery
+2025-04-22T02:42:12.364498+0530 DEBUG Updated content preferences for user 12: top type price_drop
+2025-04-22T02:42:12.436158+0530 DEBUG Updated content preferences for user 2: top type promotion
+2025-04-22T02:42:12.514635+0530 DEBUG Updated content preferences for user 8: top type restock
+2025-04-22T02:42:12.578968+0530 DEBUG Updated content preferences for user 6: top type order_confirmation
+2025-04-22T02:42:13.373854+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:42:14.111209+0530 INFO Sent content recommendations for 20 users to User Profile Service
+2025-04-22T02:42:14.867056+0530 INFO Agent channel_analysis_1e8af253 (Channel Analysis) starting
+2025-04-22T02:42:15.607777+0530 INFO Received 0 channel engagements from Dashboard Tracker
+2025-04-22T02:42:17.060332+0530 INFO Received 100 channel engagements from Email Engagement Tracker
+2025-04-22T02:42:22.266831+0530 INFO Received 100 channel engagements from Mobile App Events Tracker
+2025-04-22T02:42:27.382173+0530 INFO Received 100 channel engagements from SMS Interaction Tracker
+2025-04-22T02:42:31.702696+0530 DEBUG ChannelAnalysisAgent channel_analysis_1e8af253 processing
+2025-04-22T02:42:32.405234+0530 DEBUG Updated channel preferences for user 2: top channel email
+2025-04-22T02:42:32.475329+0530 DEBUG Updated channel preferences for user 18: top channel email
+2025-04-22T02:42:32.543424+0530 DEBUG Updated channel preferences for user 5: top channel email
+2025-04-22T02:42:32.609845+0530 DEBUG Updated channel preferences for user 13: top channel email
+2025-04-22T02:42:32.675620+0530 DEBUG Updated channel preferences for user 17: top channel email
+2025-04-22T02:42:32.742793+0530 DEBUG Updated channel preferences for user 3: top channel email
+2025-04-22T02:42:32.809142+0530 DEBUG Updated channel preferences for user 14: top channel push
+2025-04-22T02:42:32.915543+0530 DEBUG Updated channel preferences for user 21: top channel email
+2025-04-22T02:42:32.984845+0530 DEBUG Updated channel preferences for user 12: top channel email
+2025-04-22T02:42:33.052779+0530 DEBUG Updated channel preferences for user 6: top channel push
+2025-04-22T02:42:33.123292+0530 DEBUG Updated channel preferences for user 15: top channel sms
+2025-04-22T02:42:33.188109+0530 DEBUG Updated channel preferences for user 10: top channel sms
+2025-04-22T02:42:33.266612+0530 DEBUG Updated channel preferences for user 9: top channel sms
+2025-04-22T02:42:33.330626+0530 DEBUG Updated channel preferences for user 4: top channel email
+2025-04-22T02:42:33.401150+0530 DEBUG Updated channel preferences for user 8: top channel push
+2025-04-22T02:42:33.464760+0530 DEBUG Updated channel preferences for user 11: top channel email
+2025-04-22T02:42:33.543268+0530 DEBUG Updated channel preferences for user 16: top channel email
+2025-04-22T02:42:33.606140+0530 DEBUG Updated channel preferences for user 20: top channel email
+2025-04-22T02:42:33.684823+0530 DEBUG Updated channel preferences for user 19: top channel email
+2025-04-22T02:42:33.753714+0530 DEBUG Updated channel preferences for user 7: top channel email
+2025-04-22T02:42:34.524286+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:42:35.238085+0530 INFO Sent channel recommendations for 20 users to User Profile Service
+2025-04-22T02:42:35.959657+0530 INFO Agent user_profile_08b62314 (User Profile Service) starting
+2025-04-22T02:42:36.687915+0530 INFO Received frequency recommendations for 20 users from Frequency Analysis
+2025-04-22T02:42:38.872472+0530 INFO Received content recommendations for 20 users from Type Analysis
+2025-04-22T02:42:41.231007+0530 INFO Received channel recommendations for 20 users from Channel Analysis
+2025-04-22T02:42:43.021089+0530 DEBUG UserProfileAgent user_profile_08b62314 processing
+2025-04-22T02:42:43.089246+0530 INFO Merging updates for 20 user profiles
+2025-04-22T02:42:43.182407+0530 DEBUG Updated segments for user 2: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:42:43.224602+0530 DEBUG Updated segments for user 3: ['frequency_medium', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:42:43.262138+0530 DEBUG Updated segments for user 4: ['frequency_low', 'prefers_email', 'prefers_delivery', 'active_evening']
+2025-04-22T02:42:43.301745+0530 DEBUG Updated segments for user 5: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:42:43.362325+0530 DEBUG Updated segments for user 6: ['frequency_medium', 'prefers_push', 'prefers_order_confirmation', 'active_evening']
+2025-04-22T02:42:43.397343+0530 DEBUG Updated segments for user 7: ['frequency_medium', 'prefers_email', 'prefers_price_drop', 'active_evening']
+2025-04-22T02:42:43.434205+0530 DEBUG Updated segments for user 8: ['frequency_high', 'prefers_push', 'prefers_restock', 'active_evening']
+2025-04-22T02:42:43.465560+0530 DEBUG Updated segments for user 9: ['frequency_medium', 'prefers_sms', 'prefers_promotion', 'active_evening']
+2025-04-22T02:42:43.507637+0530 DEBUG Updated segments for user 10: ['frequency_very_low', 'prefers_sms', 'prefers_return', 'active_evening']
+2025-04-22T02:42:43.545197+0530 DEBUG Updated segments for user 11: ['frequency_very_high', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:42:43.582767+0530 DEBUG Updated segments for user 12: ['frequency_medium', 'prefers_email', 'prefers_price_drop', 'active_evening']
+2025-04-22T02:42:43.613447+0530 DEBUG Updated segments for user 13: ['frequency_low', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:42:43.657118+0530 DEBUG Updated segments for user 14: ['frequency_very_low', 'prefers_push', 'prefers_packing', 'active_evening']
+2025-04-22T02:42:43.680102+0530 DEBUG Updated segments for user 15: ['frequency_low', 'prefers_sms', 'prefers_delivery', 'active_evening']
+2025-04-22T02:42:43.731972+0530 DEBUG Updated segments for user 16: ['frequency_very_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:42:43.756597+0530 DEBUG Updated segments for user 17: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:42:43.809396+0530 DEBUG Updated segments for user 18: ['frequency_low', 'prefers_email', 'prefers_shipment', 'active_evening']
+2025-04-22T02:42:43.840645+0530 DEBUG Updated segments for user 19: ['frequency_very_high', 'prefers_email', 'prefers_order_confirmation', 'active_evening']
+2025-04-22T02:42:43.874410+0530 DEBUG Updated segments for user 20: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:42:43.906642+0530 DEBUG Updated segments for user 21: ['frequency_very_low', 'prefers_email', 'prefers_delivery', 'active_evening']
+2025-04-22T02:42:44.681206+0530 DEBUG Message delivered to 1 agents of type recommendation
+2025-04-22T02:42:45.423849+0530 INFO Sent 20 updated profiles to Recommendation System
+2025-04-22T02:42:46.130339+0530 INFO Agent recommendation_31feac1b (Recommendation System) starting
+2025-04-22T02:42:46.931974+0530 INFO Received 20 updated profiles from User Profile Service
+2025-04-22T02:42:48.301828+0530 DEBUG RecommendationAgent recommendation_31feac1b processing
+2025-04-22T02:42:48.443278+0530 INFO A/B test 1: Variant variant_a outperformed control for metric open_rate
+2025-04-22T02:42:49.173955+0530 ERROR Error in agent recommendation_31feac1b: type object 'NotificationEngagement' has no attribute 'models'
+2025-04-22T02:42:49.174953+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\recommendation.py", line 35, in process
+    await self._check_ab_test_results()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\recommendation.py", line 128, in _check_ab_test_results
+    await self._update_strategies_from_test(test_id, variant, result)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\recommendation.py", line 242, in _update_strategies_from_test
+    ab_test = db.query(NotificationEngagement.models.ABTest).filter_by(id=test_id).first()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'NotificationEngagement' has no attribute 'models'
+
+2025-04-22T02:42:49.175950+0530 INFO Agent ab_testing_932fa8c8 (A/B Testing Module) starting
+2025-04-22T02:42:49.175950+0530 DEBUG ABTestingAgent ab_testing_932fa8c8 processing
+2025-04-22T02:42:50.551528+0530 WARNING No eligible users found for A/B test Email Subject Line Test (ID: 1)
+2025-04-22T02:42:51.234881+0530 WARNING No eligible users found for A/B test Notification Timing Test (ID: 2)
+2025-04-22T02:42:51.922743+0530 WARNING No eligible users found for A/B test Channel Preference Test (ID: 3)
+2025-04-22T02:42:52.153840+0530 INFO Analyzing results for A/B test Email Subject Line Test (ID: 1)
+2025-04-22T02:42:54.328009+0530 INFO Updated results for test 1, metric open_rate: {'control': 0.25, 'variant_a': 0.3076923076923077, 'variant_b': 0.36036036036036034}
+2025-04-22T02:42:55.820598+0530 INFO Updated results for test 1, metric click_rate: {'control': 0.17592592592592593, 'variant_a': 0.17307692307692307, 'variant_b': 0.1891891891891892}
+2025-04-22T02:42:55.821567+0530 INFO Analyzing results for A/B test Notification Timing Test (ID: 2)
+2025-04-22T02:42:57.581637+0530 INFO Updated results for test 2, metric open_rate: {'control': 0.3333333333333333, 'variant_a': 0.2545454545454545, 'variant_b': 0.3106060606060606}
+2025-04-22T02:42:57.807349+0530 INFO Updated results for test 2, metric engagement_score: {'control': 0.23975694444444443, 'variant_a': 0.2833333333333333, 'variant_b': 0.29958333333333337}
+2025-04-22T02:42:58.766873+0530 INFO Agent email_service_c0378067 (Email Service) starting
+2025-04-22T02:42:58.767833+0530 DEBUG EmailServiceAgent email_service_c0378067 processing
+2025-04-22T02:42:59.511469+0530 INFO Agent push_notification_75e3fdaa (Push Notification Service) starting
+2025-04-22T02:42:59.512472+0530 DEBUG PushNotificationAgent push_notification_75e3fdaa processing
+2025-04-22T02:43:00.245796+0530 INFO Agent sms_gateway_105a3e8d (SMS Gateway) starting
+2025-04-22T02:43:00.245796+0530 DEBUG SMSGatewayAgent sms_gateway_105a3e8d processing
+2025-04-22T02:43:00.966266+0530 INFO Agent dashboard_alert_baab8a4a (Dashboard Alert System) starting
+2025-04-22T02:43:00.966266+0530 DEBUG DashboardAlertAgent dashboard_alert_baab8a4a processing
+2025-04-22T02:43:01.747314+0530 DEBUG DashboardTrackerAgent dashboard_tracker_a1024b28 processing
+2025-04-22T02:43:04.766405+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:43:06.792800+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:43:08.333784+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:43:09.101383+0530 INFO Sent dashboard metrics for 0 users to analysis agents
+2025-04-22T02:43:09.873712+0530 DEBUG EmailEngagementAgent email_engagement_320755f2 processing
+2025-04-22T02:43:10.706938+0530 DEBUG Processed email engagement for user 2, action: open
+2025-04-22T02:43:10.985738+0530 DEBUG Processed email engagement for user 9, action: open
+2025-04-22T02:43:11.264201+0530 DEBUG Processed email engagement for user 17, action: click
+2025-04-22T02:43:11.329702+0530 DEBUG Processed email engagement for user 17, action: open
+2025-04-22T02:43:12.844709+0530 DEBUG Calculated email metrics for user 4: 100.0% open rate, 0.0% click rate
+2025-04-22T02:43:13.637851+0530 DEBUG Calculated email metrics for user 7: 50.0% open rate, 50.0% click rate
+2025-04-22T02:43:14.421937+0530 DEBUG Calculated email metrics for user 9: 33.3% open rate, 0.0% click rate
+2025-04-22T02:43:15.196531+0530 DEBUG Calculated email metrics for user 15: 50.0% open rate, 0.0% click rate
+2025-04-22T02:43:15.970796+0530 DEBUG Calculated email metrics for user 6: 100.0% open rate, 0.0% click rate
+2025-04-22T02:43:16.742561+0530 DEBUG Calculated email metrics for user 12: 60.0% open rate, 40.0% click rate
+2025-04-22T02:43:17.538184+0530 DEBUG Calculated email metrics for user 19: 100.0% open rate, 60.0% click rate
+2025-04-22T02:43:18.320854+0530 DEBUG Calculated email metrics for user 3: 100.0% open rate, 100.0% click rate
+2025-04-22T02:43:19.100438+0530 DEBUG Calculated email metrics for user 17: 100.0% open rate, 50.0% click rate
+2025-04-22T02:43:19.881943+0530 DEBUG Calculated email metrics for user 20: 100.0% open rate, 0.0% click rate
+2025-04-22T02:43:20.647572+0530 DEBUG Calculated email metrics for user 13: 100.0% open rate, 0.0% click rate
+2025-04-22T02:43:21.419740+0530 DEBUG Calculated email metrics for user 5: 100.0% open rate, 50.0% click rate
+2025-04-22T02:43:22.189209+0530 DEBUG Calculated email metrics for user 18: 100.0% open rate, 0.0% click rate
+2025-04-22T02:43:22.963417+0530 DEBUG Calculated email metrics for user 2: 100.0% open rate, 0.0% click rate
+2025-04-22T02:43:23.736180+0530 DEBUG Calculated email metrics for user 16: 50.0% open rate, 0.0% click rate
+2025-04-22T02:43:24.510739+0530 DEBUG Calculated email metrics for user 11: 100.0% open rate, 100.0% click rate
+2025-04-22T02:43:25.283867+0530 DEBUG Calculated email metrics for user 8: 66.7% open rate, 0.0% click rate
+2025-04-22T02:43:26.076794+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:43:27.523727+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:43:29.154465+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:43:29.887562+0530 INFO Sent email metrics for 100 users to analysis agents
+2025-04-22T02:43:30.619294+0530 DEBUG MobileAppEventsAgent mobile_app_events_6943ca75 processing
+2025-04-22T02:43:32.283269+0530 DEBUG Calculated mobile metrics for user 4: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:33.745813+0530 DEBUG Calculated mobile metrics for user 9: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:34.735667+0530 DEBUG Calculated mobile metrics for user 10: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:35.898650+0530 DEBUG Calculated mobile metrics for user 7: 50.0% open rate, 0.0% click rate
+2025-04-22T02:43:36.872771+0530 DEBUG Calculated mobile metrics for user 15: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:37.836150+0530 DEBUG Calculated mobile metrics for user 6: 0.0% open rate, 100.0% click rate
+2025-04-22T02:43:39.163405+0530 DEBUG Calculated mobile metrics for user 12: 0.0% open rate, 50.0% click rate
+2025-04-22T02:43:40.131078+0530 DEBUG Calculated mobile metrics for user 21: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:41.086419+0530 DEBUG Calculated mobile metrics for user 14: 50.0% open rate, 0.0% click rate
+2025-04-22T02:43:42.041071+0530 DEBUG Calculated mobile metrics for user 3: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:43.181088+0530 DEBUG Calculated mobile metrics for user 17: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:44.162145+0530 DEBUG Calculated mobile metrics for user 20: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:45.128903+0530 DEBUG Calculated mobile metrics for user 13: 20.0% open rate, 20.0% click rate
+2025-04-22T02:43:46.110910+0530 DEBUG Calculated mobile metrics for user 5: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:47.089895+0530 DEBUG Calculated mobile metrics for user 18: 33.3% open rate, 0.0% click rate
+2025-04-22T02:43:48.106640+0530 DEBUG Calculated mobile metrics for user 2: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:49.059980+0530 DEBUG Calculated mobile metrics for user 16: 0.0% open rate, 0.0% click rate
+2025-04-22T02:43:50.141223+0530 DEBUG Calculated mobile metrics for user 8: 0.0% open rate, 100.0% click rate
+2025-04-22T02:43:52.578903+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:43:54.127632+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:43:55.794031+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:43:56.567416+0530 INFO Sent mobile metrics for 100 users to analysis agents
+2025-04-22T02:43:57.360949+0530 DEBUG SMSInteractionAgent sms_interaction_5c0400d5 processing
+2025-04-22T02:43:58.734605+0530 DEBUG Calculated SMS metrics for user 4: 0.0% response rate
+2025-04-22T02:43:59.263971+0530 DEBUG Calculated SMS metrics for user 9: 100.0% response rate
+2025-04-22T02:43:59.795402+0530 DEBUG Calculated SMS metrics for user 10: 20.0% response rate
+2025-04-22T02:44:00.356510+0530 DEBUG Calculated SMS metrics for user 15: 25.0% response rate
+2025-04-22T02:44:00.898368+0530 DEBUG Calculated SMS metrics for user 6: 0.0% response rate
+2025-04-22T02:44:01.433970+0530 DEBUG Calculated SMS metrics for user 12: 0.0% response rate
+2025-04-22T02:44:01.966927+0530 DEBUG Calculated SMS metrics for user 21: 0.0% response rate
+2025-04-22T02:44:02.499248+0530 DEBUG Calculated SMS metrics for user 14: 0.0% response rate
+2025-04-22T02:44:03.031562+0530 DEBUG Calculated SMS metrics for user 3: 0.0% response rate
+2025-04-22T02:44:03.667822+0530 DEBUG Calculated SMS metrics for user 17: 0.0% response rate
+2025-04-22T02:44:04.229791+0530 DEBUG Calculated SMS metrics for user 13: 0.0% response rate
+2025-04-22T02:44:04.779857+0530 DEBUG Calculated SMS metrics for user 5: 0.0% response rate
+2025-04-22T02:44:05.309634+0530 DEBUG Calculated SMS metrics for user 18: 0.0% response rate
+2025-04-22T02:44:05.839958+0530 DEBUG Calculated SMS metrics for user 2: 0.0% response rate
+2025-04-22T02:44:08.026888+0530 DEBUG Message delivered to 1 agents of type frequency_analysis
+2025-04-22T02:44:09.482353+0530 DEBUG Message delivered to 1 agents of type channel_analysis
+2025-04-22T02:44:11.074674+0530 DEBUG Message delivered to 1 agents of type type_analysis
+2025-04-22T02:44:11.790459+0530 INFO Sent SMS metrics for 100 users to analysis agents
+2025-04-22T02:44:13.254197+0530 INFO Received 0 dashboard metrics from Dashboard Tracker
+2025-04-22T02:44:14.695834+0530 INFO Received 100 email engagement metrics from Email Engagement Tracker
+2025-04-22T02:44:19.895240+0530 INFO Received 100 mobile engagement metrics from Mobile App Events Tracker
+2025-04-22T02:44:25.304474+0530 INFO Received 100 SMS engagement metrics from SMS Interaction Tracker
+2025-04-22T02:44:29.653291+0530 DEBUG FrequencyAnalysisAgent frequency_analysis_7488cd32 processing
+2025-04-22T02:44:30.236743+0530 DEBUG Updated frequency preferences for user 4: low (0.20)
+2025-04-22T02:44:30.308629+0530 DEBUG Updated frequency preferences for user 9: medium (0.57)
+2025-04-22T02:44:30.378526+0530 DEBUG Updated frequency preferences for user 10: very_low (0.15)
+2025-04-22T02:44:30.457343+0530 DEBUG Updated frequency preferences for user 15: low (0.22)
+2025-04-22T02:44:30.525175+0530 DEBUG Updated frequency preferences for user 6: medium (0.55)
+2025-04-22T02:44:30.588525+0530 DEBUG Updated frequency preferences for user 12: medium (0.42)
+2025-04-22T02:44:30.655932+0530 DEBUG Updated frequency preferences for user 21: very_low (0.00)
+2025-04-22T02:44:30.726739+0530 DEBUG Updated frequency preferences for user 14: very_low (0.11)
+2025-04-22T02:44:30.790289+0530 DEBUG Updated frequency preferences for user 3: medium (0.50)
+2025-04-22T02:44:30.854186+0530 DEBUG Updated frequency preferences for user 17: low (0.35)
+2025-04-22T02:44:30.927588+0530 DEBUG Updated frequency preferences for user 13: low (0.30)
+2025-04-22T02:44:30.994412+0530 DEBUG Updated frequency preferences for user 5: low (0.35)
+2025-04-22T02:44:31.063747+0530 DEBUG Updated frequency preferences for user 18: low (0.25)
+2025-04-22T02:44:31.167471+0530 DEBUG Updated frequency preferences for user 2: low (0.20)
+2025-04-22T02:44:31.231668+0530 DEBUG Updated frequency preferences for user 7: medium (0.49)
+2025-04-22T02:44:31.294738+0530 DEBUG Updated frequency preferences for user 19: very_high (1.00)
+2025-04-22T02:44:31.363143+0530 DEBUG Updated frequency preferences for user 20: low (0.30)
+2025-04-22T02:44:31.428106+0530 DEBUG Updated frequency preferences for user 16: very_low (0.15)
+2025-04-22T02:44:31.491545+0530 DEBUG Updated frequency preferences for user 11: very_high (1.00)
+2025-04-22T02:44:31.558899+0530 DEBUG Updated frequency preferences for user 8: high (0.72)
+2025-04-22T02:44:32.609423+0530 DEBUG Updated time preferences for user 2: peak period evening
+2025-04-22T02:44:32.674602+0530 DEBUG Updated time preferences for user 5: peak period evening
+2025-04-22T02:44:32.738567+0530 DEBUG Updated time preferences for user 6: peak period evening
+2025-04-22T02:44:32.804698+0530 DEBUG Updated time preferences for user 7: peak period evening
+2025-04-22T02:44:32.868983+0530 DEBUG Updated time preferences for user 8: peak period evening
+2025-04-22T02:44:32.932266+0530 DEBUG Updated time preferences for user 10: peak period evening
+2025-04-22T02:44:32.997125+0530 DEBUG Updated time preferences for user 13: peak period evening
+2025-04-22T02:44:33.081025+0530 DEBUG Updated time preferences for user 17: peak period evening
+2025-04-22T02:44:33.145353+0530 DEBUG Updated time preferences for user 9: peak period evening
+2025-04-22T02:44:33.209015+0530 DEBUG Updated time preferences for user 11: peak period evening
+2025-04-22T02:44:33.275351+0530 DEBUG Updated time preferences for user 12: peak period evening
+2025-04-22T02:44:33.339983+0530 DEBUG Updated time preferences for user 20: peak period evening
+2025-04-22T02:44:33.406884+0530 DEBUG Updated time preferences for user 21: peak period evening
+2025-04-22T02:44:33.470506+0530 DEBUG Updated time preferences for user 3: peak period evening
+2025-04-22T02:44:33.537368+0530 DEBUG Updated time preferences for user 4: peak period evening
+2025-04-22T02:44:33.601692+0530 DEBUG Updated time preferences for user 19: peak period evening
+2025-04-22T02:44:33.684451+0530 DEBUG Updated time preferences for user 15: peak period evening
+2025-04-22T02:44:33.757659+0530 DEBUG Updated time preferences for user 16: peak period evening
+2025-04-22T02:44:33.828619+0530 DEBUG Updated time preferences for user 18: peak period evening
+2025-04-22T02:44:33.898657+0530 DEBUG Updated time preferences for user 14: peak period evening
+2025-04-22T02:44:34.810854+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:44:35.678331+0530 INFO Sent frequency recommendations for 20 users to User Profile Service
+2025-04-22T02:44:37.180023+0530 INFO Received 0 dashboard section views from Dashboard Tracker
+2025-04-22T02:44:38.682173+0530 INFO Received 44 notification type metrics from Email Engagement Tracker
+2025-04-22T02:44:42.200472+0530 INFO Received 16 notification type metrics from Mobile App Events Tracker
+2025-04-22T02:44:44.279557+0530 INFO Received 0 notification type metrics from SMS Interaction Tracker
+2025-04-22T02:44:45.068816+0530 DEBUG TypeAnalysisAgent type_analysis_748b5e9e processing
+2025-04-22T02:44:46.459601+0530 DEBUG Updated content preferences for user 21: top type delivery
+2025-04-22T02:44:46.530411+0530 DEBUG Updated content preferences for user 18: top type shipment
+2025-04-22T02:44:46.597233+0530 DEBUG Updated content preferences for user 19: top type order_confirmation
+2025-04-22T02:44:46.666363+0530 DEBUG Updated content preferences for user 15: top type delivery
+2025-04-22T02:44:46.733040+0530 DEBUG Updated content preferences for user 5: top type promotion
+2025-04-22T02:44:46.804518+0530 DEBUG Updated content preferences for user 11: top type packing
+2025-04-22T02:44:46.873913+0530 DEBUG Updated content preferences for user 3: top type packing
+2025-04-22T02:44:46.960292+0530 DEBUG Updated content preferences for user 13: top type packing
+2025-04-22T02:44:47.029111+0530 DEBUG Updated content preferences for user 10: top type return
+2025-04-22T02:44:47.098922+0530 DEBUG Updated content preferences for user 17: top type promotion
+2025-04-22T02:44:47.168735+0530 DEBUG Updated content preferences for user 9: top type promotion
+2025-04-22T02:44:47.236117+0530 DEBUG Updated content preferences for user 20: top type promotion
+2025-04-22T02:44:47.302970+0530 DEBUG Updated content preferences for user 14: top type packing
+2025-04-22T02:44:47.376363+0530 DEBUG Updated content preferences for user 7: top type price_drop
+2025-04-22T02:44:47.448733+0530 DEBUG Updated content preferences for user 4: top type delivery
+2025-04-22T02:44:47.513860+0530 DEBUG Updated content preferences for user 12: top type price_drop
+2025-04-22T02:44:47.580767+0530 DEBUG Updated content preferences for user 2: top type promotion
+2025-04-22T02:44:47.659553+0530 DEBUG Updated content preferences for user 8: top type restock
+2025-04-22T02:44:47.727149+0530 DEBUG Updated content preferences for user 6: top type order_confirmation
+2025-04-22T02:44:48.574147+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:44:49.298856+0530 INFO Sent content recommendations for 20 users to User Profile Service
+2025-04-22T02:44:50.801175+0530 INFO Received 0 channel engagements from Dashboard Tracker
+2025-04-22T02:44:52.294420+0530 INFO Received 100 channel engagements from Email Engagement Tracker
+2025-04-22T02:44:57.790653+0530 INFO Received 100 channel engagements from Mobile App Events Tracker
+2025-04-22T02:45:03.134550+0530 INFO Received 100 channel engagements from SMS Interaction Tracker
+2025-04-22T02:45:07.645736+0530 DEBUG ChannelAnalysisAgent channel_analysis_1e8af253 processing
+2025-04-22T02:45:08.994899+0530 DEBUG Updated channel preferences for user 2: top channel email
+2025-04-22T02:45:09.063836+0530 DEBUG Updated channel preferences for user 18: top channel email
+2025-04-22T02:45:09.137939+0530 DEBUG Updated channel preferences for user 5: top channel email
+2025-04-22T02:45:09.208138+0530 DEBUG Updated channel preferences for user 13: top channel email
+2025-04-22T02:45:09.275328+0530 DEBUG Updated channel preferences for user 17: top channel email
+2025-04-22T02:45:09.343252+0530 DEBUG Updated channel preferences for user 3: top channel email
+2025-04-22T02:45:09.663124+0530 DEBUG Updated channel preferences for user 14: top channel push
+2025-04-22T02:45:09.728495+0530 DEBUG Updated channel preferences for user 21: top channel email
+2025-04-22T02:45:09.802402+0530 DEBUG Updated channel preferences for user 12: top channel email
+2025-04-22T02:45:09.860420+0530 DEBUG Updated channel preferences for user 6: top channel push
+2025-04-22T02:45:09.939209+0530 DEBUG Updated channel preferences for user 15: top channel sms
+2025-04-22T02:45:09.994918+0530 DEBUG Updated channel preferences for user 10: top channel sms
+2025-04-22T02:45:10.078844+0530 DEBUG Updated channel preferences for user 9: top channel sms
+2025-04-22T02:45:10.151086+0530 DEBUG Updated channel preferences for user 4: top channel email
+2025-04-22T02:45:10.215063+0530 DEBUG Updated channel preferences for user 8: top channel push
+2025-04-22T02:45:10.282884+0530 DEBUG Updated channel preferences for user 11: top channel email
+2025-04-22T02:45:10.346848+0530 DEBUG Updated channel preferences for user 16: top channel email
+2025-04-22T02:45:10.411568+0530 DEBUG Updated channel preferences for user 20: top channel email
+2025-04-22T02:45:10.478234+0530 DEBUG Updated channel preferences for user 19: top channel email
+2025-04-22T02:45:10.544351+0530 DEBUG Updated channel preferences for user 7: top channel email
+2025-04-22T02:45:11.791681+0530 DEBUG Message delivered to 1 agents of type user_profile
+2025-04-22T02:45:12.575656+0530 INFO Sent channel recommendations for 20 users to User Profile Service
+2025-04-22T02:45:14.094206+0530 INFO Received frequency recommendations for 20 users from Frequency Analysis
+2025-04-22T02:45:16.478878+0530 INFO Received content recommendations for 20 users from Type Analysis
+2025-04-22T02:45:18.714221+0530 INFO Received channel recommendations for 20 users from Channel Analysis
+2025-04-22T02:45:20.167123+0530 DEBUG UserProfileAgent user_profile_08b62314 processing
+2025-04-22T02:45:20.245740+0530 INFO Merging updates for 20 user profiles
+2025-04-22T02:45:20.341965+0530 DEBUG Updated segments for user 2: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:45:20.371319+0530 DEBUG Updated segments for user 3: ['frequency_medium', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:45:20.410084+0530 DEBUG Updated segments for user 4: ['frequency_low', 'prefers_email', 'prefers_delivery', 'active_evening']
+2025-04-22T02:45:20.449572+0530 DEBUG Updated segments for user 5: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:45:20.480675+0530 DEBUG Updated segments for user 6: ['frequency_medium', 'prefers_push', 'prefers_order_confirmation', 'active_evening']
+2025-04-22T02:45:20.512496+0530 DEBUG Updated segments for user 7: ['frequency_medium', 'prefers_email', 'prefers_price_drop', 'active_evening']
+2025-04-22T02:45:20.559881+0530 DEBUG Updated segments for user 8: ['frequency_high', 'prefers_push', 'prefers_restock', 'active_evening']
+2025-04-22T02:45:20.600934+0530 DEBUG Updated segments for user 9: ['frequency_medium', 'prefers_sms', 'prefers_promotion', 'active_evening']
+2025-04-22T02:45:20.623993+0530 DEBUG Updated segments for user 10: ['frequency_very_low', 'prefers_sms', 'prefers_return', 'active_evening']
+2025-04-22T02:45:20.670628+0530 DEBUG Updated segments for user 11: ['frequency_very_high', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:45:20.702082+0530 DEBUG Updated segments for user 12: ['frequency_medium', 'prefers_email', 'prefers_price_drop', 'active_evening']
+2025-04-22T02:45:20.733523+0530 DEBUG Updated segments for user 13: ['frequency_low', 'prefers_email', 'prefers_packing', 'active_evening']
+2025-04-22T02:45:20.764984+0530 DEBUG Updated segments for user 14: ['frequency_very_low', 'prefers_push', 'prefers_packing', 'active_evening']
+2025-04-22T02:45:20.811643+0530 DEBUG Updated segments for user 15: ['frequency_low', 'prefers_sms', 'prefers_delivery', 'active_evening']
+2025-04-22T02:45:20.842658+0530 DEBUG Updated segments for user 16: ['frequency_very_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:45:20.874111+0530 DEBUG Updated segments for user 17: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:45:20.921105+0530 DEBUG Updated segments for user 18: ['frequency_low', 'prefers_email', 'prefers_shipment', 'active_evening']
+2025-04-22T02:45:20.958372+0530 DEBUG Updated segments for user 19: ['frequency_very_high', 'prefers_email', 'prefers_order_confirmation', 'active_evening']
+2025-04-22T02:45:20.998621+0530 DEBUG Updated segments for user 20: ['frequency_low', 'prefers_email', 'prefers_promotion', 'active_evening']
+2025-04-22T02:45:21.034340+0530 DEBUG Updated segments for user 21: ['frequency_very_low', 'prefers_email', 'prefers_delivery', 'active_evening']
+2025-04-22T02:45:21.883937+0530 DEBUG Message delivered to 1 agents of type recommendation
+2025-04-22T02:45:22.637736+0530 INFO Sent 20 updated profiles to Recommendation System
+2025-04-22T02:45:24.144483+0530 INFO Received 20 updated profiles from User Profile Service
+2025-04-22T02:45:25.890093+0530 DEBUG RecommendationAgent recommendation_31feac1b processing
+2025-04-22T02:45:26.023185+0530 INFO A/B test 1: Variant variant_a outperformed control for metric open_rate
+2025-04-22T02:45:26.803939+0530 ERROR Error in agent recommendation_31feac1b: type object 'NotificationEngagement' has no attribute 'models'
+2025-04-22T02:45:26.805932+0530 DEBUG Traceback (most recent call last):
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\base_agent.py", line 56, in start
+    await self.process()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\recommendation.py", line 35, in process
+    await self._check_ab_test_results()
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\recommendation.py", line 128, in _check_ab_test_results
+    await self._update_strategies_from_test(test_id, variant, result)
+  File "C:\Users\mukul\SmartNotification\SmartNotification\app\agents\decision_engine\recommendation.py", line 242, in _update_strategies_from_test
+AttributeError: type object 'NotificationEngagement' has no attribute 'models'
+
+2025-04-22T02:45:26.806934+0530 DEBUG ABTestingAgent ab_testing_932fa8c8 processing
+2025-04-22T02:45:28.194587+0530 WARNING No eligible users found for A/B test Email Subject Line Test (ID: 1)
+2025-04-22T02:45:28.887903+0530 WARNING No eligible users found for A/B test Notification Timing Test (ID: 2)
+2025-04-22T02:45:29.586836+0530 WARNING No eligible users found for A/B test Channel Preference Test (ID: 3)
+2025-04-22T02:45:29.816761+0530 INFO Analyzing results for A/B test Email Subject Line Test (ID: 1)
+2025-04-22T02:45:33.257086+0530 INFO Updated results for test 1, metric open_rate: {'control': 0.25, 'variant_a': 0.3076923076923077, 'variant_b': 0.36036036036036034}
+2025-04-22T02:45:35.951768+0530 INFO Updated results for test 1, metric click_rate: {'control': 0.17592592592592593, 'variant_a': 0.17307692307692307, 'variant_b': 0.1891891891891892}
+2025-04-22T02:45:35.951768+0530 INFO Analyzing results for A/B test Notification Timing Test (ID: 2)
+2025-04-22T02:45:38.604570+0530 INFO Updated results for test 2, metric open_rate: {'control': 0.3333333333333333, 'variant_a': 0.2545454545454545, 'variant_b': 0.3106060606060606}
+2025-04-22T02:45:38.846589+0530 INFO Updated results for test 2, metric engagement_score: {'control': 0.23975694444444443, 'variant_a': 0.2833333333333333, 'variant_b': 0.29958333333333337}
+2025-04-22T02:45:39.852567+0530 DEBUG EmailServiceAgent email_service_c0378067 processing

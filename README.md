@@ -48,7 +48,7 @@ The system is built on a multi-agent architecture with four main layers:
 ### Installation
 
 1. Clone the repository:
-git clone [https://github.com/MukulKirtiVerma/smart-notification-system.git](https://github.com/MukulKirtiVerma/SmartNotification.git)
+git clone [https://github.com/MukulKirtiVerma/SmartNotification.git](https://github.com/MukulKirtiVerma/SmartNotification.git)
 cd smart-notification-system
 
 2. Set up a virtual environment:
@@ -139,8 +139,8 @@ The system exposes several RESTful endpoints:
 # Example: Creating a Notification
 
 To create a notification using the API:
-bashcurl -X POST "http://localhost:8000/api/v1/notifications/" \
 ```
+curl -X POST "http://localhost:8000/api/v1/notifications/" \
   -H "Content-Type: application/json" \
   -d '{
     "user_id": 1,
@@ -205,6 +205,230 @@ Look for exceptions in agent processing
 Confirm the application is running
 Check the port is not in use
 Verify firewall settings
+
+
+# API Endpoint Testing
+## 4.1 Check System Status
+
+Request system status:
+```
+curl http://localhost:8000/api/v1/system/status
+```
+Verify all agents are running and registered
+
+## 4.2 User Management
+
+Create a test user:
+```
+curl -X POST "http://localhost:8000/api/v1/users/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "test@example.com",
+    "username": "testuser",
+    "password": "testpassword"
+  }'
+```
+List users:
+```
+curl "http://localhost:8000/api/v1/users/"
+```
+Get specific user:
+```
+curl "http://localhost:8000/api/v1/users/1"
+```
+
+## 4.3 Notification Preferences
+
+Create notification preferences:
+```
+curl -X POST "http://localhost:8000/api/v1/preferences/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": 1,
+    "notification_type": "shipment",
+    "channel": "email",
+    "is_enabled": true,
+    "frequency": "high"
+  }'
+```
+Get user preferences:
+```
+curl "http://localhost:8000/api/v1/preferences/?user_id=1"
+```
+
+# 5. Notification System Testing
+## 5.1 Email Notification
+
+Create email notification:
+```
+curl -X POST "http://localhost:8000/api/v1/notifications/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": 1,
+    "type": "shipment",
+    "channel": "email",
+    "title": "Your Order Has Shipped",
+    "content": "Your order #12345 has shipped and will be delivered soon."
+  }'
+```
+Verify notification creation:
+```
+curl "http://localhost:8000/api/v1/notifications/?user_id=1"
+```
+Record email open event:
+```
+curl -X POST "http://localhost:8000/api/v1/engagements/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "notification_id": 1,
+    "action": "open"
+  }'
+```
+Record email click event:
+```
+curl -X POST "http://localhost:8000/api/v1/engagements/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "notification_id": 1,
+    "action": "click"
+  }'
+```
+
+## 5.2 Push Notification
+
+Create push notification:
+```
+curl -X POST "http://localhost:8000/api/v1/notifications/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": 1,
+    "type": "delivery",
+    "channel": "push",
+    "title": "Delivery Update",
+    "content": "Your package will be delivered today between 2-4 PM."
+  }'
+```
+Record push open event:
+```
+curl -X POST "http://localhost:8000/api/v1/engagements/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "notification_id": 2,
+    "action": "open"
+  }'
+```
+
+## 5.3 SMS Notification
+
+Create SMS notification:
+```
+curl -X POST "http://localhost:8000/api/v1/notifications/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": 1,
+    "type": "delivery",
+    "channel": "sms",
+    "title": "Delivery Alert",
+    "content": "Your package requires signature. Driver arriving in 30 mins."
+  }'
+```
+
+Record SMS response:
+```
+curl -X POST "http://localhost:8000/api/v1/engagements/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "notification_id": 3,
+    "action": "response",
+    "metadata": {"content": "OK, thanks"}
+  }'
+```
+
+## 5.4 Dashboard Notification
+
+Create dashboard notification:
+```
+curl -X POST "http://localhost:8000/api/v1/notifications/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": 1,
+    "type": "order_confirmation",
+    "channel": "dashboard",
+    "title": "Order Confirmed",
+    "content": "Your order #12345 has been confirmed and is being processed."
+  }'
+```
+Get dashboard alerts:
+```
+curl "http://localhost:8000/api/v1/dashboard-alerts/?user_id=1"
+```
+
+Record dashboard interaction:
+```
+curl -X POST "http://localhost:8000/api/v1/dashboard-alerts/interaction/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "notification_id": 4,
+    "user_id": 1,
+    "action": "read"
+  }'
+```
+
+## 6. Analysis Layer Testing
+
+Wait for processing (3-5 minutes)
+
+```
+python check_profile.py
+```
+
+Verify profile contains updated preferences based on engagements
+
+## 7. A/B Testing Layer
+
+Create an A/B test:
+```
+curl -X POST "http://localhost:8000/api/v1/ab-tests/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "Subject Line Test",
+    "description": "Testing different email subject formats",
+    "metrics": ["open_rate", "click_rate"],
+    "variants": {
+      "control": {"description": "Standard subject"},
+      "variant_a": {"description": "Question subject"},
+      "variant_b": {"description": "Urgent subject"}
+    }
+  }'
+```
+List active A/B tests:
+```
+curl "http://localhost:8000/api/v1/ab-tests/?is_active=true"
+```
+
+## 8. Comprehensive System Test
+
+```
+python system_test.py
+```
+Monitor system logs:
+```
+tail -f logs/notification_system_*.log
+```
+
+# 9. Performance Testing
+
+Run the load test:
+```
+python load_test.py
+```
+
+## 10. Shutdown and Cleanup
+
+Stop the application (Press Ctrl+C in the terminal where it's running)
+Verify all agents have shut down properly in the logs
+
+RetryClaude can make mistakes. Please double-check responses.Usage limit reached — your limit will reset at 3:30 AM.Subscribe to Maxjust only .md file 3.7 SonnetChat controls 3.7 SonnetOur most intelligent model yet Learn moreArtifactsSmart Notific
 
 
 

@@ -23,7 +23,7 @@ from app.api.schemas import (
 )
 from app.agents.agent_registry import AgentRegistry
 from app.agents.base_agent import BaseAgent
-from config.constants import NotificationChannel, NotificationType
+from config.constants import NotificationChannel, NotificationType, AgentType
 
 router = APIRouter()
 
@@ -90,7 +90,7 @@ async def create_notification(notification: NotificationCreate, background_tasks
         channel=notification.channel,
         title=notification.title,
         content=notification.content,
-        meta_data=notification.met_adata,
+        meta_data=notification.meta_data,
         scheduled_at=notification.scheduled_at or datetime.utcnow()
     )
     db.add(db_notification)

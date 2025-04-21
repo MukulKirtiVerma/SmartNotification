@@ -80,7 +80,7 @@ async def startup_event():
     logger.info("Starting Smart Notification System")
 
     # Create database tables if they don't exist
-    Base.meta_data.create_all(bind=engine)
+    Base.metadata.create_all(bind=engine)
     logger.info("Database tables initialized")
 
     # Initialize and start agents
@@ -169,7 +169,8 @@ signal.signal(signal.SIGTERM, handle_exit_signal)
 if __name__ == "__main__":
     uvicorn.run(
         "app.main:app",
-        host="0.0.0.0",
+        host="127.0.0.1",
         port=8000,
-        reload=current_config.DEBUG
+        reload=current_config.DEBUG,
+        log_level="debug"
     )
