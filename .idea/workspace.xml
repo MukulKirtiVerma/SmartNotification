@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0238f020-68ac-4687-85a1-20a9380a8cd5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/.idea/SmartNotification.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/agent_registry.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/analysis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/analysis/channel_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/analysis/frequency_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/analysis/type_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/base_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/data_collection/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/data_collection/dashboard_tracker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/data_collection/email_engagement.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/data_collection/mobile_app_events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/data_collection/sms_interaction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/decision_engine/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/decision_engine/ab_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/decision_engine/recommendation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/decision_engine/user_profile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/notification/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/notification/dashboard_alert.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/notification/email_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/notification/push_notification.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/notification/sms_gateway.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/api/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/api/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/api/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/db/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/db/database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/db/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/utils/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/app/utils/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/config/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/config/constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/generate_files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/scripts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/scripts/generate_dummy_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/scripts/setup_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/test_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/test_data_collection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/test_decision_engine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/test_notification.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../SmartNotification" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2w2oFcwvyeR25QCPHa5yegY4Urf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.generate_dummy_data.executor": "Run",
+    "Python.generate_files.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.setup_database.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_dummy_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../SmartNotification/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SmartNotification/scripts/generate_dummy_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generate_files" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../SmartNotification" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SmartNotification/generate_files.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../SmartNotification/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SmartNotification/app/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="setup_database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../SmartNotification/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SmartNotification/scripts/setup_database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="SmartNotification" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.generate_dummy_data" />
+        <item itemvalue="Python.setup_database" />
+        <item itemvalue="Python.generate_files" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0238f020-68ac-4687-85a1-20a9380a8cd5" name="Changes" comment="" />
+      <created>1745248932481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745248932481</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../SmartNotification/main.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../SmartNotification/app/db/database.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../SmartNotification/scripts/setup_database.py</url>
+          <line>59</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../SmartNotification/scripts/setup_database.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
