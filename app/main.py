@@ -33,6 +33,7 @@ from app.agents.notification.email_service import EmailServiceAgent
 from app.agents.notification.push_notification import PushNotificationAgent
 from app.agents.notification.sms_gateway import SMSGatewayAgent
 from app.agents.notification.dashboard_alert import DashboardAlertAgent
+from fastapi import FastAPI, BackgroundTasks
 
 from config.config import current_config
 
@@ -104,35 +105,43 @@ async def initialize_agents():
     """Initialize and start all agents."""
     global agents
 
-    # Create agent instances
-    # Data Collection Layer
-    agents.append(DashboardTrackerAgent())
-    agents.append(EmailEngagementAgent())
-    agents.append(MobileAppEventsAgent())
-    agents.append(SMSInteractionAgent())
+    agents.extend([
+        DashboardTrackerAgent(),
+        EmailEngagementAgent(),
+        MobileAppEventsAgent(),
+        SMSInteractionAgent(),
 
-    # Analysis Layer
-    agents.append(FrequencyAnalysisAgent())
-    agents.append(TypeAnalysisAgent())
-    agents.append(ChannelAnalysisAgent())
+        FrequencyAnalysisAgent(),
+        TypeAnalysisAgent(),
+        ChannelAnalysisAgent(),
 
-    # Decision Engine
-    agents.append(UserProfileAgent())
-    agents.append(RecommendationAgent())
-    agents.append(ABTestingAgent())
+        UserProfileAgent(),
+        RecommendationAgent(),
+        ABTestingAgent(),
 
-    # Notification Management Layer
-    agents.append(EmailServiceAgent())
-    agents.append(PushNotificationAgent())
-    agents.append(SMSGatewayAgent())
-    agents.append(DashboardAlertAgent())
+        EmailServiceAgent(),
+        PushNotificationAgent(),
+        SMSGatewayAgent(),
+        DashboardAlertAgent(),
+    ])
 
-    # Start all agents
     logger.info(f"Starting {len(agents)} agents")
+
     for agent in agents:
-        asyncio.create_task(agent.start())
+        if hasattr(agent, "start") and callable(agent.start):
+            asyncio.create_task(start_agent_non_blocking(agent))
 
     logger.info("All agents started")
+
+
+async def start_agent_non_blocking(agent):
+    try:
+        logger.info(f"Starting agent: {agent.__class__.__name__}")
+        # If start is blocking, offload to thread
+        await asyncio.to_thread(agent.start)
+    except Exception as e:
+        logger.error(f"Failed to start {agent.__class__.__name__}: {str(e)}")
+
 
 
 async def stop_agents():
@@ -157,9 +166,19 @@ async def stop_agents():
 def handle_exit_signal(sig, frame):
     """Handle exit signals gracefully."""
     logger.info(f"Received exit signal {sig}")
-    asyncio.create_task(shutdown_event())
-    # Give time for shutdown tasks to complete
-    asyncio.get_event_loop().stop()
+
+    loop = asyncio.get_event_loop()
+
+    # Schedule shutdown_event
+    loop.create_task(shutdown_event())
+
+    # Stop the loop after a small delay to allow shutdown_event to complete
+    def stop_loop():
+        logger.info("Stopping event loop...")
+        loop.stop()
+
+    loop.call_later(2, stop_loop)  # Give 2 seconds for graceful shutdown
+
 
 
 # Register signal handlers

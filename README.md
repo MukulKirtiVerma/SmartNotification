@@ -428,10 +428,6 @@ python load_test.py
 Stop the application (Press Ctrl+C in the terminal where it's running)
 Verify all agents have shut down properly in the logs
 
-RetryClaude can make mistakes. Please double-check responses.Usage limit reached — your limit will reset at 3:30 AM.Subscribe to Maxjust only .md file 3.7 SonnetChat controls 3.7 SonnetOur most intelligent model yet Learn moreArtifactsSmart Notific
-
-
-
 # Logs
 Application logs are stored in the logs directory. Check these files for detailed information about system operations and errors.
 

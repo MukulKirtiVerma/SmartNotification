@@ -1,0 +1,101 @@
+{
+  "info": {
+    "name": "Smart Notification System (Local)",
+    "_postman_id": "2d649bfd-6b10-41b4-a987-25b3c497f3c2",
+    "description": "Postman collection for testing the FastAPI Smart Notification System on localhost.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create User",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_id\": \"user_123\",\n  \"email\": \"user@example.com\",\n  \"preferences\": {\n    \"channel\": \"email\"\n  },\n  \"password\": \"pass123\"\n}"
+        },
+        "url": { "raw": "http://localhost:8000/users/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["users", ""] }
+      }
+    },
+    {
+      "name": "Create Notification",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_id\": \"user_123\",\n  \"message\": \"Test notification\",\n  \"channel\": \"email\",\n  \"type\": \"info\",\n  \"priority\": 1\n}"
+        },
+        "url": { "raw": "http://localhost:8000/notifications/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["notifications", ""] }
+      }
+    },
+    {
+      "name": "Get All Notifications",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:8000/notifications/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["notifications", ""] }
+      }
+    },
+    {
+      "name": "Filter Notifications by Channel",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/notifications/filter?channel=email&type=info",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["notifications", "filter"],
+          "query": [
+            { "key": "channel", "value": "email" },
+            { "key": "type", "value": "info" }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Engage Notification",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_id\": \"user_123\",\n  \"notification_id\": \"notif_001\",\n  \"action\": \"clicked\"\n}"
+        },
+        "url": { "raw": "http://localhost:8000/notifications/engage", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["notifications", "engage"] }
+      }
+    },
+    {
+      "name": "Create A/B Test",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"test_id\": \"test_001\",\n  \"variants\": {\n    \"control\": \"Welcome to our app!\",\n    \"variant_a\": \"Hello there! Enjoy our services.\"\n  },\n  \"metrics\": [\"click_rate\", \"conversion\"]\n}"
+        },
+        "url": { "raw": "http://localhost:8000/abtest/", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["abtest", ""] }
+      }
+    },
+    {
+      "name": "Assign Variant to User",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"user_id\": \"user_123\",\n  \"test_id\": \"test_001\"\n}"
+        },
+        "url": { "raw": "http://localhost:8000/abtest/assign", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["abtest", "assign"] }
+      }
+    },
+    {
+      "name": "Agent Health Check (Bonus)",
+      "request": {
+        "method": "GET",
+        "url": { "raw": "http://localhost:8000/health/agents", "protocol": "http", "host": ["localhost"], "port": "8000", "path": ["health", "agents"] }
+      }
+    }
+  ]
+}

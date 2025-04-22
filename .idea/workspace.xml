@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0238f020-68ac-4687-85a1-20a9380a8cd5" name="Changes" comment="first">
-      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/check_profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/generate_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/load_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SmartNotification/tests/system_test.py" afterDir="false" />
+    <list default="true" id="0238f020-68ac-4687-85a1-20a9380a8cd5" name="Changes" comment="fixes">
       <change beforePath="$PROJECT_DIR$/../SmartNotification/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SmartNotification/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../SmartNotification/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/app/agents/data_collection/email_engagement.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/data_collection/email_engagement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/app/agents/decision_engine/ab_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/decision_engine/ab_testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/app/agents/decision_engine/recommendation.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SmartNotification/app/agents/decision_engine/recommendation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/app/api/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SmartNotification/app/api/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SmartNotification/app/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SmartNotification/config/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../SmartNotification/config/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/tests/conftest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/tests/test_analysis.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/tests/test_data_collection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/tests/test_decision_engine.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SmartNotification/tests/test_notification.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SmartNotification/logs/notification_system_2025-04-22_02-47-10_673747.log" beforeDir="false" afterPath="$PROJECT_DIR$/../SmartNotification/logs/notification_system_2025-04-22_02-47-10_673747.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -320,12 +306,21 @@
       <option name="project" value="LOCAL" />
       <updated>1745265468138</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixes">
+      <option name="closed" value="true" />
+      <created>1745270550391</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745270550391</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first" />
-    <option name="LAST_COMMIT_MESSAGE" value="first" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
