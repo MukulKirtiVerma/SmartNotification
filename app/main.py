@@ -110,15 +110,12 @@ async def initialize_agents():
         EmailEngagementAgent(),
         MobileAppEventsAgent(),
         SMSInteractionAgent(),
-
         FrequencyAnalysisAgent(),
         TypeAnalysisAgent(),
         ChannelAnalysisAgent(),
-
         UserProfileAgent(),
         RecommendationAgent(),
         ABTestingAgent(),
-
         EmailServiceAgent(),
         PushNotificationAgent(),
         SMSGatewayAgent(),
@@ -128,10 +125,21 @@ async def initialize_agents():
     logger.info(f"Starting {len(agents)} agents")
 
     for agent in agents:
-        if hasattr(agent, "start") and callable(agent.start):
-            asyncio.create_task(start_agent_non_blocking(agent))
+        try:
+            logger.info(f"Starting agent: {agent.__class__.__name__}")
+
+            if asyncio.iscoroutinefunction(agent.start):
+                # Async start: schedule it
+                asyncio.create_task(agent.start())
+            else:
+                # Blocking start: run in a thread
+                asyncio.create_task(asyncio.to_thread(agent.start))
+
+        except Exception as e:
+            logger.error(f"Failed to start {agent.__class__.__name__}: {str(e)}")
 
     logger.info("All agents started")
+
 
 
 async def start_agent_non_blocking(agent):
@@ -187,7 +195,7 @@ signal.signal(signal.SIGTERM, handle_exit_signal)
 
 if __name__ == "__main__":
     uvicorn.run(
-        "app.main:app",
+        app,  # Use the app instance directly
         host="127.0.0.1",
         port=8000,
         reload=current_config.DEBUG,
