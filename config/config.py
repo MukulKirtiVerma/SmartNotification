@@ -11,10 +11,12 @@ class Config:
     DEBUG = ENV == "development"
 
     # Database configurations
-    DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://neondb_owner:npg_Pybt5XTnL8Ia@ep-wispy-night-a4rr466a-pooler.us-east-1.aws.neon.tech/notification_system?sslmode=require")
-    REDIS_URL = os.getenv("REDIS_URL", "redis://default:BZ4dEFzReHC2lvuLtIm4ut5Go3thVTWN@redis-12055.c256.us-east-1-2.ec2.redns.redis-cloud.com:/0")
-    MONGODB_URL = os.getenv("MONGODB_URL", "mongodb+srv://mukul:mukul@cluster0.wdxy6.mongodb.net/notification_system?retryWrites=true&w=majority&appName=Cluster0")
-
+    DATABASE_URL = os.getenv("DATABASE_URL",
+                             "")
+    REDIS_URL = os.getenv("REDIS_URL",
+                          "")
+    MONGODB_URL = os.getenv("MONGODB_URL",
+                            "")
 
     # API configurations
     API_PREFIX = "/api/v1"
