@@ -80,14 +80,20 @@ async def startup_event():
     """Initialize the application on startup."""
     logger.info("Starting Smart Notification System")
 
-    # Create database tables if they don't exist
-    Base.metadata.create_all(bind=engine)
-    logger.info("Database tables initialized")
+    try:
+        # Create database tables if they don't exist
+        Base.metadata.create_all(bind=engine)
+        logger.info("Database tables initialized")
 
-    # Initialize and start agents
-    await initialize_agents()
+        # Initialize and start agents in background
+        # asyncio.create_task(initialize_agents())
 
-    logger.info("Smart Notification System started successfully")
+        logger.info("Smart Notification System started successfully")
+    except Exception as e:
+        logger.error(f"Error during startup: {str(e)}")
+        # Log the full exception traceback for debugging
+        import traceback
+        logger.error(traceback.format_exc())
 
 
 @app.on_event("shutdown")
@@ -101,55 +107,55 @@ async def shutdown_event():
     logger.info("Smart Notification System shutdown complete")
 
 
+# Simple health check endpoint that doesn't rely on agents or database
+@app.get("/health")
+def health_check():
+    """Basic health check endpoint."""
+    return {"status": "ok", "timestamp": datetime.utcnow().isoformat()}
+
+
 async def initialize_agents():
     """Initialize and start all agents."""
     global agents
 
-    agents.extend([
-        DashboardTrackerAgent(),
-        EmailEngagementAgent(),
-        MobileAppEventsAgent(),
-        SMSInteractionAgent(),
-        FrequencyAnalysisAgent(),
-        TypeAnalysisAgent(),
-        ChannelAnalysisAgent(),
-        UserProfileAgent(),
-        RecommendationAgent(),
-        ABTestingAgent(),
-        EmailServiceAgent(),
-        PushNotificationAgent(),
-        SMSGatewayAgent(),
-        DashboardAlertAgent(),
-    ])
-
-    logger.info(f"Starting {len(agents)} agents")
-
-    for agent in agents:
-        try:
-            logger.info(f"Starting agent: {agent.__class__.__name__}")
-
-            if asyncio.iscoroutinefunction(agent.start):
-                # Async start: schedule it
-                asyncio.create_task(agent.start())
-            else:
-                # Blocking start: run in a thread
-                asyncio.create_task(asyncio.to_thread(agent.start))
-
-        except Exception as e:
-            logger.error(f"Failed to start {agent.__class__.__name__}: {str(e)}")
-
-    logger.info("All agents started")
-
-
-
-async def start_agent_non_blocking(agent):
     try:
-        logger.info(f"Starting agent: {agent.__class__.__name__}")
-        # If start is blocking, offload to thread
-        await asyncio.to_thread(agent.start)
-    except Exception as e:
-        logger.error(f"Failed to start {agent.__class__.__name__}: {str(e)}")
+        agents.extend([
+            DashboardTrackerAgent(),
+            EmailEngagementAgent(),
+            MobileAppEventsAgent(),
+            SMSInteractionAgent(),
 
+            FrequencyAnalysisAgent(),
+            TypeAnalysisAgent(),
+            ChannelAnalysisAgent(),
+
+            UserProfileAgent(),
+            RecommendationAgent(),
+            ABTestingAgent(),
+
+            EmailServiceAgent(),
+            PushNotificationAgent(),
+            SMSGatewayAgent(),
+            DashboardAlertAgent(),
+        ])
+
+        logger.info(f"Starting {len(agents)} agents")
+
+        # Start agents in separate background tasks
+        for agent in agents:
+            if hasattr(agent, "start") and callable(agent.start):
+                # Create a separate task for each agent
+                asyncio.create_task(agent.start())
+                logger.info(f"Started agent: {agent.__class__.__name__}")
+                # Small delay to avoid overwhelming the system with all agents at once
+                await asyncio.sleep(0.1)
+
+        logger.info("All agents started")
+    except Exception as e:
+        logger.error(f"Error initializing agents: {str(e)}")
+        # Log the full exception traceback for debugging
+        import traceback
+        logger.error(traceback.format_exc())
 
 
 async def stop_agents():
@@ -163,7 +169,10 @@ async def stop_agents():
 
     # Stop all agents
     for agent in agents:
-        await agent.stop()
+        try:
+            await agent.stop()
+        except Exception as e:
+            logger.error(f"Error stopping agent {agent.__class__.__name__}: {str(e)}")
 
     agents = []
 
@@ -175,7 +184,13 @@ def handle_exit_signal(sig, frame):
     """Handle exit signals gracefully."""
     logger.info(f"Received exit signal {sig}")
 
-    loop = asyncio.get_event_loop()
+    # Get the current event loop
+    try:
+        loop = asyncio.get_running_loop()
+    except RuntimeError:
+        # If no running loop, create a new one
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
 
     # Schedule shutdown_event
     loop.create_task(shutdown_event())
@@ -188,15 +203,15 @@ def handle_exit_signal(sig, frame):
     loop.call_later(2, stop_loop)  # Give 2 seconds for graceful shutdown
 
 
-
 # Register signal handlers
 signal.signal(signal.SIGINT, handle_exit_signal)
 signal.signal(signal.SIGTERM, handle_exit_signal)
 
 if __name__ == "__main__":
+    # Use host 0.0.0.0 to make it accessible from all network interfaces
     uvicorn.run(
-        app,  # Use the app instance directly
-        host="127.0.0.1",
+        "app.main:app",
+        host="0.0.0.0",  # Changed from 127.0.0.1 to make it externally accessible
         port=8000,
         reload=current_config.DEBUG,
         log_level="debug"

@@ -388,8 +388,8 @@ Verify profile contains updated preferences based on engagements
 
 Create an A/B test:
 ```
-curl -X POST "http://localhost:8000/api/v1/ab-tests/" \
-  -H "Content-Type: application/json" \
+curl -X POST "http://localhost:8000/api/v1/ab-tests/" 
+  -H "Content-Type: application/json" 
   -d '{
     "name": "Subject Line Test",
     "description": "Testing different email subject formats",
