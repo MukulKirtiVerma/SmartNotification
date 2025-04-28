@@ -31,10 +31,11 @@ router = APIRouter()
 # User routes
 @router.post("/users/", response_model=UserSchema)
 def create_user(user: UserCreate, db: Session = Depends(get_db)):
-    """Create a new user."""
+    """Create a new user or return existing if email already registered."""
     db_user = db.query(User).filter(User.email == user.email).first()
     if db_user:
-        raise HTTPException(status_code=400, detail="Email already registered")
+        # Email already registered, return existing user
+        return db_user
 
     # In a real app, you would hash the password here
     password_hash = user.password  # DEMO ONLY - don't do this in production!
@@ -48,6 +49,7 @@ def create_user(user: UserCreate, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(db_user)
     return db_user
+
 
 
 @router.get("/users/", response_model=List[UserSchema])

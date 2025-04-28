@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import func
 
 from app.agents.base_agent import BaseAgent
+from app.agents.decision_engine.user_profile import UserProfileAgent
 from app.db.database import get_db, get_mongo_collection
 from app.db.models import User, UserSession, PageView
 from config.constants import AgentType, Collections, NotificationChannel
@@ -27,7 +28,6 @@ class DashboardTrackerAgent(BaseAgent):
         Process dashboard interactions and collect metrics.
         """
         logger.debug(f"DashboardTrackerAgent {self.agent_id} processing")
-
         # Get recent page views from database
         try:
             db = next(get_db())
@@ -82,7 +82,10 @@ class DashboardTrackerAgent(BaseAgent):
             }
 
             # Store the event in MongoDB
-            self.user_events_collection.insert_one(event)
+            try:
+                self.user_events_collection.insert_one(event)
+            except Exception as e:
+                pass
 
             logger.debug(f"Processed dashboard view for user {user_id}, section: {event['details']['section']}")
 

@@ -111,6 +111,38 @@ You can view the API documentation at: http://localhost:8000/api/docs
 
 # Docker Setup
 
+
+
+# Build Docker Image
+
+Make sure you have Docker and Docker Compose installed on your machine.
+### Build and start the containers:
+
+```
+docker-compose up -d
+```
+
+### Initialize the database and generate test data:
+```
+docker-compose exec app python scripts/setup_database.py
+docker-compose exec app python scripts/generate_dummy_data.py
+```
+
+### Run the recommendation flow test:
+```
+docker-compose exec app python recommendation_flow_test.py
+```
+
+### To view logs:
+```
+docker-compose logs -f app
+```
+
+### To stop the system:
+```
+docker-compose down
+```
+
 You can also run the entire system using Docker:
 
 Make sure Docker and Docker Compose are installed on your system
@@ -434,6 +466,37 @@ Application logs are stored in the logs directory. Check these files for detaile
 
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+# Build Docker Image
+
+Make sure you have Docker and Docker Compose installed on your machine.
+### Build and start the containers:
+
+```
+bashdocker-compose up -d
+```
+
+### Initialize the database and generate test data:
+```
+bashdocker-compose exec app python scripts/setup_database.py
+docker-compose exec app python scripts/generate_dummy_data.py
+```
+
+### Run the recommendation flow test:
+```
+bashdocker-compose exec app python recommendation_flow_test.py
+```
+
+### To view logs:
+```
+bashdocker-compose logs -f app
+```
+
+### To stop the system:
+```
+bashdocker-compose down
+```
 
 # Acknowledgments
 This project implements research from the field of adaptive notification systems and user behavior analysis.
